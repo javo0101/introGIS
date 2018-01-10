@@ -24,7 +24,7 @@ This tutorial will guide you through the very basics of GIS mapping concepts. Th
 
 [Geoprocessing Tools: Clipping](sections/clip.md)  
 
-[Adding a Plugin: Buffer Zone](sections/buffer.md)  
+[Adding a Plugin & Creating a Buffer Zone](sections/buffer.md)  
 
 [Extracting the Contour from a Raster Image](sections/contour.md)  
 
@@ -32,4 +32,4 @@ This tutorial will guide you through the very basics of GIS mapping concepts. Th
 
 [Geoprocessing Tools: Difference](sections/differ.md)  
 
-[Visualizing your Project](sections/visual.md)  
+[More Resources](sections/more.md)  

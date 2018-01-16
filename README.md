@@ -1,4 +1,4 @@
-<<< Previous  | [Next >>>](sections/differ.md)  
+<<< Previous  | [Next >>>](sections/basic.md)  
 
 # Introduction to Mapping using QGIS
 
@@ -22,4 +22,4 @@ This tutorial will guide you through the very basics of GIS mapping concepts. Th
 [Geoprocessing Tools: Difference](sections/differ.md)  
 [More Resources](sections/more.md)  
 
-<<< Previous  | [Next >>>](sections/differ.md)  
+<<< Previous  | [Next >>>](sections/basic.md)  

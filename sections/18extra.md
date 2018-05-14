@@ -1,6 +1,6 @@
 [<<< Previous](17viz.md)  | [Next >>>](19layout.md)  
 
-# Additional Layers and Ideas to Analyze other Aspects
+# Additional Layers and Ideas for Analysis
 
 Now that we have visualizations of some of the types of populations within the vulnerable areas, we can add other layers and analyze the relationships between population and the data in these other layers. For this example, we will look at a layer of Hurricane Evacuation Centers in New York City. Are these centers capable of sheltering all of the population in the vulnerable areas?
 

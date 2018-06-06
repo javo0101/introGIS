@@ -22,4 +22,7 @@ This tutorial will guide you through the very basics of GIS mapping concepts. Th
 [Geoprocessing Tools: Difference](sections/differ.md)  
 [More Resources](sections/more.md)  
 
+Session Leader: Javier Otero Peña  
+Based on previous work by Javier Otero Peña  
+
 <<< Previous  | [Next >>>](sections/basic.md)  

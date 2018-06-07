@@ -1,4 +1,4 @@
-[<<< Previous](contour.md)  | [Next >>>](differ.md)  
+[<<< Previous](12cntour.md)  | [Next >>>](14differ.md)  
 
 # Geometry Tool: Lines to Polygons
 
@@ -8,4 +8,4 @@ But that doesn’t mean we don’t have tedious work at hand. For instance, look
 
 ![Lines to Polygons resulting layer](images/linesto1.png)
 
-[<<< Previous](contour.md)  | [Next >>>](differ.md)  
+[<<< Previous](12contour.md)  | [Next >>>](14differ.md)  

@@ -1,4 +1,4 @@
-[<<< Previous](differ.md)  | Next >>> 
+[<<< Previous](19layout.md)  | Next >>> 
 
 # More Resources
 
@@ -8,4 +8,4 @@ Remember that you can download many Shapefiles and Raster Images for free online
 
 Last, but not least… you can contact the GC Digital Fellows for further support. And, if you’re interested in GIS and Mapping and would like to be in touch with others who are actively using GIS for their research or teaching, join us in the [GIS / Mapping Working Group](https://commons.gc.cuny.edu/groups/gis-working-group/)  !
 
-[<<< Previous](differ.md)  | Next >>> 
+[<<< Previous](19layout.md)  | Next >>> 

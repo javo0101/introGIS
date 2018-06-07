@@ -1,4 +1,4 @@
-[<<< Previous](clip.md)  | [Next >>>](contour.md)  
+[<<< Previous](10clip.md)  | [Next >>>](12cntour.md)  
 
 # Adding a Plugin & Creating a Buffer Zone
 
@@ -20,4 +20,4 @@ Here, choose Hydro as the source layer, then select a Fixed radio of 500 meters.
 
 Notice that in the middle of Manhattan there are some buffers, too. These ones were generated from the lakes in Central Park, but since lakes are not flooding, we can delete them. To delete them, just toggle editing on the Hydro buffer, select those circles in the middle and press the Del key on your keyboard. Now toggle editing off, save the changes on the layer and we can continue.
 
-[<<< Previous](clip.md)  | [Next >>>](contour.md)  
+[<<< Previous](10clip.md)  | [Next >>>](12cntour.md)  

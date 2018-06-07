@@ -1,4 +1,4 @@
-[<<< Previous](layer1.md)  | [Next >>>](attrib.md)  
+[<<< Previous](3layer1.md)  | [Next >>>](5attrib.md)  
 
 # Layer Properties & Customization
 
@@ -8,4 +8,4 @@ As you can see from the shapes in the layer, this is a polygon vector layer. Eac
 
 Since you already are on the Properties box, click on General so that we can check out the Coordinate Reference System. You will see that this layer’s Coordinate Reference System (CRS) is “Selected CRS (EPSG:4269, NAD83)”. Keep that in mind and close the Layer Properties dialog box.
 
-[<<< Previous](layer1.md)  | [Next >>>](attrib.md)  
+[<<< Previous](3layer1.md)  | [Next >>>](5attrib.md)  

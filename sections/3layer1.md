@@ -17,3 +17,4 @@ Here, click on Browse, go in the BLOCKS folder and select the 061blk00s.zip file
 ![Blocks Layer Added](images/layer3.png)
 
 [<<< Previous](2setup.md)  | [Next >>>](4layerpr.md)  
+

@@ -1,4 +1,4 @@
-[<<< Previous](13lines2.md)  | [Next >>>](15more.md)  
+[<<< Previous](13lines2.md)  | [Next >>>](15calc.md)  
 
 # Geoprocessing Tools: Difference
 
@@ -12,4 +12,4 @@ Now we have a new layer called Difference. We are approaching the end of this br
 
 And there we have it. The orange area is the Vulnerable Area. If we look at the attribute table of this layer, we can analyze the characteristics of the vulnerable population, according to the attributes that already existed in the original Census Blocks layer, such as Race, Age and Gender.
 
-[<<< Previous](13lines2.md)  | [Next >>>](15more.md)  
+[<<< Previous](13lines2.md)  | [Next >>>](15calc.md)  

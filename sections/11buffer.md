@@ -14,7 +14,7 @@ Now, you’ll notice that a new menu MMQGIS showed up on your Menu Toolbar. Go a
 
 ![Creating a Buffer Zone](images/buffer1.png)
 
-Here, choose Hydro as the source layer, then select a Fixed Radius of 500 meters. Name the Output Shapefile “Hydro buffer” and place it in a convenient directory in your computer. Leave everything else as is, and click OK. Your result should look something like this:
+Here, choose Hydro as the source layer, then select a Fixed Radius of 500 meters. Name the Output Shapefile “hydro_buffer” and place it in a convenient directory in your computer. Leave everything else as is, and click OK. Your result should look something like this:
 
 ![Buffer Zone Resulting Layer](images/buffer2.png)
 

@@ -6,6 +6,10 @@ Geographic Information Systems (GIS) are an essential digital tool for the creat
 
 This tutorial will guide you through the very basics of GIS mapping concepts. Then, we will use QGIS to project a map and do some basic analysis and drawing functions on it.
 
+[Get Started >>>](sections/1basic.md)  
+
+-----
+
 [Basic GIS Lexicon](sections/1basic.md)  
 [Setting Up](sections/2setup.md)  
 [Adding a Vector Layer](sections/3layer1.md)  
@@ -27,7 +31,7 @@ This tutorial will guide you through the very basics of GIS mapping concepts. Th
 [Layout: Making a printable and shareable product with QGIS](sections/19layout.md)  
 [More Resources](sections/20more.md)  
 
-<<< Previous  | [Next >>>](sections/1basic.md)  
+-----
 
 Session Leader: Javier Otero Peña
 Based on previous work by Javier Otero Peña

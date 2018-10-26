@@ -1,4 +1,4 @@
-[<<< Previous](layer2.md)  | [Next >>>](newlayer.md)  
+[<<< Previous](6layer2.md)  | [Next >>>](8newlayr.md)  
 
 # Adding a Raster Layer
 
@@ -10,4 +10,4 @@ That raster is a Digital Elevation Map, and the colors reflect altitude: the dar
 
 Also note that the square does not cover the whole Manhattan, but just a fraction of it. For practicity’s sake, we will define this square area as our “study area”, so we will disregard anything that is not within this box. To do this, we will create a new layer from scratch, and we will draw a polygon in the shape of the raster layer.
 
-[<<< Previous](layer2.md)  | [Next >>>](newlayer.md)  
+[<<< Previous](6layer2.md)  | [Next >>>](8newlayr.md)  

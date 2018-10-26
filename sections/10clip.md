@@ -1,4 +1,4 @@
-[<<< Previous](polydraw.md)  | [Next >>>](buffer.md)  
+[<<< Previous](9polydrw.md)  | [Next >>>](11buffer.md)  
 
 # Geoprocessing Tools: Clipping
 
@@ -10,4 +10,4 @@ In the Clip dialog box, you will choose Blocks as your input layer, and Study Ar
 
 ![Resulting Layer after Clipping](images/clip1.png)
 
-[<<< Previous](polydraw.md)  | [Next >>>](buffer.md)  
+[<<< Previous](9polydrw.md)  | [Next >>>](11buffer.md)  

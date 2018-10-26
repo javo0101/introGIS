@@ -1,4 +1,4 @@
-<<< Previous  | [Next >>>](sections/basic.md)  
+<<< Previous  | [Next >>>](sections/1basic.md)  
 
 # Introduction to Mapping using QGIS
 
@@ -6,23 +6,28 @@ Geographic Information Systems (GIS) are an essential digital tool for the creat
 
 This tutorial will guide you through the very basics of GIS mapping concepts. Then, we will use QGIS to project a map and do some basic analysis and drawing functions on it.
 
-[Basic GIS Lexicon](sections/basic.md)  
-[Setting Up](sections/setup.md)  
-[Adding a Vector Layer](sections/layer1.md)  
-[Layer Properties & Customization](sections/layerpro.md)  
-[The Attribute Table](sections/attrib.md)  
-[Adding a Second Vector Layer & Harmonizing CRS](sections/layer2.md)  
-[Adding a Raster Layer](sections/raster.md)  
-[Creating a New Vector Layer](sections/newlayer.md)  
-[Drawing a Polygon](sections/polydraw.md)  
-[Geoprocessing Tools: Clipping](sections/clip.md)  
-[Adding a Plugin & Creating a Buffer Zone](sections/buffer.md)  
-[Extracting the Contour from a Raster Image](sections/contour.md)  
-[Geometry Tool: Lines to Polygons](sections/linesto.md)  
-[Geoprocessing Tools: Difference](sections/differ.md)  
-[More Resources](sections/more.md)  
+[Basic GIS Lexicon](sections/1basic.md)  
+[Setting Up](sections/2setup.md)  
+[Adding a Vector Layer](sections/3layer1.md)  
+[Layer Properties & Customization](sections/4layerpr.md)  
+[The Attribute Table](sections/5attrib.md)  
+[Adding a Second Vector Layer & Harmonizing CRS](sections/6layer2.md)  
+[Adding a Raster Layer](sections/7raster.md)  
+[Creating a New Vector Layer](sections/8newlayr.md)  
+[Drawing a Polygon](sections/9polydrw.md)  
+[Geoprocessing Tools: Clipping](sections/10clip.md)  
+[Adding a Plugin & Creating a Buffer Zone](sections/11buffer.md)  
+[Extracting the Contour from a Raster Image](sections/12cntour.md)  
+[Geometry Tool: Lines to Polygons](sections/13lines2.md)  
+[Geoprocessing Tools: Difference](sections/14differ.md)  
+[Using the Field Calculator](sections/15calc.md)  
+[Calculating Percentages with the Field Calculator](sections/16calc2.md)  
+[Changing the Visualization of a Layer](sections/17viz.md)  
+[Additional Layers and Ideas for Analysis](sections/18extra.md)  
+[Layout: Making a printable and shareable product with QGIS](sections/19layout.md)  
+[More Resources](sections/20more.md)  
 
-Session Leader: Javier Otero Peña  
-Based on previous work by Javier Otero Peña  
+<<< Previous  | [Next >>>](sections/1basic.md)  
 
-<<< Previous  | [Next >>>](sections/basic.md)  
+Session Leader: Javier Otero Peña
+Based on previous work by Javier Otero Peña

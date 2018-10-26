@@ -1,4 +1,4 @@
-[<<< Previous](clip.md)  | [Next >>>](contour.md)  
+[<<< Previous](10clip.md)  | [Next >>>](12cntour.md)  
 
 # Adding a Plugin & Creating a Buffer Zone
 
@@ -14,10 +14,11 @@ Now, you’ll notice that a new menu MMQGIS showed up on your Menu Toolbar. Go a
 
 ![Creating a Buffer Zone](images/buffer1.png)
 
-Here, choose Hydro as the source layer, then select a Fixed radio of 500 meters. Name the Output Shapefile “Hydro buffer” and place it in a convenient directory in your computer. Leave everything else as is, and click OK. Your result should look something like this:
+
+Here, choose Hydro as the source layer, then select a Fixed Radius of 500 meters. Name the Output Shapefile “hydro_buffer” and place it in a convenient directory in your computer. Leave everything else as is, and click OK. Your result should look something like this:
 
 ![Buffer Zone Resulting Layer](images/buffer2.png)
 
 Notice that in the middle of Manhattan there are some buffers, too. These ones were generated from the lakes in Central Park, but since lakes are not flooding, we can delete them. To delete them, just toggle editing on the Hydro buffer, select those circles in the middle and press the Del key on your keyboard. Now toggle editing off, save the changes on the layer and we can continue.
 
-[<<< Previous](clip.md)  | [Next >>>](contour.md)  
+[<<< Previous](10clip.md)  | [Next >>>](12cntour.md)  

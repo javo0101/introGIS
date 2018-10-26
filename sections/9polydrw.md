@@ -1,4 +1,4 @@
-[<<< Previous](newlayer.md)  | [Next >>>](clip.md)  
+[<<< Previous](8newlayr.md)  | [Next >>>](10clip.md)  
 
 # Drawing a Polygon
 
@@ -8,4 +8,4 @@ To draw a Polygon, we have to Toggle editing mode on, by clicking on the Pencil 
 
 Once you right-click, a box will pop-up asking you to write an id. You can leave this blank and click on OK. When you do, a colored square will cover the whole raster image area. Since we don’t need to edit this layer further, click on the Toggle editing button again. A dialog will ask you if you want to save the changes, say yes.
 
-[<<< Previous](newlayer.md)  | [Next >>>](clip.md)  
+[<<< Previous](8newlayr.md)  | [Next >>>](10clip.md)  

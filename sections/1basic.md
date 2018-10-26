@@ -1,4 +1,4 @@
-[<<< Previous](../README.md)  | [Next >>>](setup.md)  
+[<<< Previous](../README.md)  | [Next >>>](2setup.md)  
 
 # Basic GIS Lexicon
 
@@ -24,6 +24,10 @@ Each layer contains the same type of feature. For example, a typical attribute i
 
 GIS files will also include geographic data that tells QGIS what vectors to create for each feature (be they points, lines or polygons), that will be represented in space according to a Coordinate Reference System (CRS), which is basically a reference for QGIS to know how to transpose aspects in a three-dimensional spherical world into two-dimensional rectangular representations. All layers in your map must be on the same CRS, otherwise data will be inaccurate or even incompatible.
 
+Below you will find two projections of the United States. Notice in the first one that the shape of the country is different to the shape we are used to seeing on maps, because it is a different projection (Sphere Azimuthal Equidistant projection). The second example is using a projection that is intended for Tokyo. Alaska and Hawaii are visible, but the United States mainland became a sprayed line. Tokyo would look great on this projection, though. This gives you an idea of how important CRS are, and how different the same geographic shapes can look depending on the projection.
+
+![Sphere Azimuthal Equidistant projection](images/proy1.png)  ![Tokyo Japan Plane Rectangular CS XVIII](images/proy2.png)
+
 Bear in mind that data might not have geographic information but could still be used in QGIS. For example, if you have an Excel spreadsheet with data about the states, and vectors representing states but with no attributes, you can join them and all the data in the spreadsheet will become attributes for the vector layer. You could also start from scratch and draw yourself each state, but the result would likely be inaccurate. In any case, the process of using geographic data to represent features on a GIS is called georeferencing. You will likely not have to worry about georeferencing as most of the data you can find on the internet is already georeferenced. 
 
 ## File Formats in QGIS: Shapefiles
@@ -34,4 +38,4 @@ Vector layers are commonly shared in shapefile format (.SHP). Shapefiles in GIS 
 
 There are other types of layers besides vector layers. The other most common type of layer is the raster layer, which consist of satellite images or maps for reference, aesthetics or additional information, such as grayscales or heatmaps where colors or intensity reflect a varying numerical value. Unlike vector layers, these have a specific resolution that determine how accurate the information is, as well as the file size. Raster layers are also commonly used for continuous data, such as temperature and elevation. Raster layers are commonly turned into vectors using QGIS, although for the data to be usable, thresholds and cutoffs must be used to narrow data in bins (i.e. elevation 0-10m; 10-20m; 20-30m…). raster layers are commonly shared in .tiff format, and the images contain metadata including georeferenciation (normally, the coordinates of each corner), and the numeric values stored in bands, which were used to generate the colors in the image.
 
-[<<< Previous](../README.md)  | [Next >>>](setup.md)  
+[<<< Previous](../README.md)  | [Next >>>](2setup.md)  

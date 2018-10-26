@@ -1,4 +1,4 @@
-[<<< Previous](buffer.md)  | [Next >>>](linesto.md)  
+[<<< Previous](11buffer.md)  | [Next >>>](13lines2.md)  
 
 # Extracting the Contour from a Raster Image
 
@@ -8,4 +8,4 @@ The first step is ready. Now comes the second step, which is to contrast this bu
 
 When you click OK, you will know you were successful if colored lines appear in the contours of the white areas in the raster image.
 
-[<<< Previous](buffer.md)  | [Next >>>](linesto.md)  
+[<<< Previous](11buffer.md)  | [Next >>>](13lines2.md)  

@@ -28,3 +28,6 @@ This tutorial will guide you through the very basics of GIS mapping concepts. Th
 [More Resources](sections/20more.md)  
 
 <<< Previous  | [Next >>>](sections/1basic.md)  
+
+Session Leader: Javier Otero Peña
+Based on previous work by Javier Otero Peña

@@ -10,7 +10,7 @@ Opening the Hurricane Evacuation Centers layer, we see the following:
 
 We can remove the points that are outside of the study area by Clipping it with the "Clipped Census Blocks to Study Area" layer (Just like we clipped other layers before). However, when you try to do it, you might get this error:
 
-![Unmatching CRS error: Layers do not all use the same CRS. This can cause unexpected results. Do you want to continue?](images/crsmatch.png)
+![Unmatching CRS error: Layers do not all use the same CRS. This can cause unexpected results. Do you want to continue?](images/crsmatch.PNG)
 
  When you get this error, know that whenever QGIS warns that there may be unexpected results, it means there WILL BE unexpected results. To avoid this you need to set the layer CRS to the project's. To do it:
  
@@ -53,7 +53,7 @@ In order to use the Housing data, we have to join it to our working dataset, tha
 * Select the `Joins` tab.
 * Click on the plus sign `+` button to add a new join.
 
-![Adding a Join to an existing layer](images/joins.png)
+![Adding a Join to an existing layer](images/joins.PNG)
 
 * You will need to identify the join field and target field. This refers to the fields in the joining and the joined datasets that are going to be used as a reference for the join, that is, so that QGIS knows to which elements belong the attributes being added. If an attribute of this join field is not found in the joined table, it will be ignored. You can choose which fields are joined, and I suggest checking the last four so that you do not get duplicate fields. 
 

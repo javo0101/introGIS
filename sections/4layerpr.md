@@ -4,8 +4,8 @@
 
 As you can see from the shapes in the layer, this is a polygon vector layer. Each polygon represents a census block, and all together compose the shape of Manhattan. Note that the color of your layer might be different from the one in the images of this tutorial; QGIS chooses layer colors at random when you first open or create one. If for any reason you’d like to change the color of the layer, you can do it by:
 
-* double-click on the layer name in the Layers Panel (“061blk00s tgr061…”) to bring up the Layer Properties box. 
-* click on the Style tab on the left side and you’ll be able to customize the look and color of the layer.
+* Double-click on the layer name in the Layers Panel (“061blk00s tgr061…”) to bring up the Layer Properties box. 
+* Click on the Style tab on the left side and you’ll be able to customize the look and color of the layer.
 * To change the color, click on the colored bar drop-down where it says “Color”. 
 * Above it, you’ll notice a transparency bar, which can be useful if you want to visualize more than one layer that overlaps. 
 

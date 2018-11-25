@@ -22,4 +22,4 @@ The new layer will be added to your view. You will have to change the CRS for th
 
 ![Lines to Polygons resulting layer](images/linesto1.png)
 
-[<<< Previous](12contour.md)  | [Next >>>](14differ.md)  
+[<<< Previous](12cntour.md)  | [Next >>>](14differ.md)  

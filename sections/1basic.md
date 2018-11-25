@@ -16,9 +16,9 @@ Data in QGIS is organized in "layers." To understand layers, imagine having seve
 
 ## Features and Attributes
 
-If a feature is a entity that appears in a layer on a map. For example, each feature on the above railroads layer would represent one railroad. An *attribute* is a characteristic of a feature.
+A feature is a entity that appears in a layer on a map. For example, each feature on the above railroads layer would represent one railroad line. An *attribute* is a characteristic of a feature, for example, speed or length of each of the railroad lines.
 
-Each layer contains the same type of feature. For example, a typical attribute in the cities layer is population. This allows the population of one city to be compared to the population of another city. Population information could also be present in the states layer, but this population data would be incompatible with the population data of the cities layer. The railroad lines layer could have an attribute for average speed, but this attribute wouldn’t make sense in either the states or the cities layers. So, each layer will have its own attribute table, which is basically a spreadsheet showing each feature as a row, and each attribute as a column. Just like in stats software, attributes can contain data as strings (text), numerical, date, or boolean.
+Each layer contains the same type of feature. For example, a typical attribute in the cities layer is population. This allows the population of one city to be compared to the population of another city. Each layer will have its own attribute table, which is basically a spreadsheet showing each feature as a row, and each attribute as a column. Just like in stats software, attributes can contain data as strings (text), numerical, date, or boolean.
 
 ## Geographic Data and Coordinate Reference System
 
@@ -28,14 +28,14 @@ Below you will find two projections of the United States. Notice in the first on
 
 ![Sphere Azimuthal Equidistant projection](images/proy1.png)  ![Tokyo Japan Plane Rectangular CS XVIII](images/proy2.png)
 
-Bear in mind that data might not have geographic information but could still be used in QGIS. For example, if you have an Excel spreadsheet with data about the states, and vectors representing states but with no attributes, you can join them and all the data in the spreadsheet will become attributes for the vector layer. You could also start from scratch and draw yourself each state, but the result would likely be inaccurate. In any case, the process of using geographic data to represent features on a GIS is called georeferencing. You will likely not have to worry about georeferencing as most of the data you can find on the internet is already georeferenced. 
+Bear in mind that data might not have geographic information but could still be used in QGIS. For example, if on one hand you have a spreadsheet with data about the states, and on the other hand you have a vector layer representing states but with no attributes, you can join the dataset and the vector layer so that all the data in the spreadsheet will become attributes for the vector layer. You can also map points on a map if you have coordinates or even physical addresses. The process of using geographic data to represent features on a GIS is called georeferencing. 
 
 ## File Formats in QGIS: Shapefiles
 
 Vector layers are commonly shared in shapefile format (.SHP). Shapefiles in GIS generate many files with the same name but different formats, and they all need to be in the same location for QGIS and other GIS software to open them correctly. Remember this when saving and copying layers. To tackle this inconvenience, GIS software has evolved and allows to read compressed files (i.e. .zip, .gz) that already contain all of the related files required by the layer.
 
-## Other File Formats in QGIS: Raster Layers
+## Other Types of Layers in QGIS: Raster Layers
 
-There are other types of layers besides vector layers. The other most common type of layer is the raster layer, which consist of satellite images or maps for reference, aesthetics or additional information, such as grayscales or heatmaps where colors or intensity reflect a varying numerical value. Unlike vector layers, these have a specific resolution that determine how accurate the information is, as well as the file size. Raster layers are also commonly used for continuous data, such as temperature and elevation. Raster layers are commonly turned into vectors using QGIS, although for the data to be usable, thresholds and cutoffs must be used to narrow data in bins (i.e. elevation 0-10m; 10-20m; 20-30m…). raster layers are commonly shared in .tiff format, and the images contain metadata including georeferenciation (normally, the coordinates of each corner), and the numeric values stored in bands, which were used to generate the colors in the image.
+There are other types of layers besides vector layers. The other most common type of layer is the raster layer, which consist of satellite images or maps for reference, aesthetics or additional information, such as grayscales or heatmaps where colors or intensity reflect a varying numerical value. Unlike vector layers, these have a specific resolution that determine how accurate the information is, as well as the file size. Raster layers are also commonly used for continuous data, such as temperature and elevation. Raster layers can be turned into vectors using QGIS, although for the data to be usable, thresholds and cutoffs must be used to narrow data in bins (i.e. elevation 0-10m; 10-20m; 20-30m…). raster layers are commonly shared in .tiff format, and the images contain metadata including georeferenciation (normally, the coordinates of each corner), and the numeric values stored in bands, which were used to generate the colors in the image.
 
 [<<< Previous](../README.md)  | [Next >>>](2setup.md)  

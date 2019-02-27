@@ -6,6 +6,6 @@ Right-clicking on the layer name in the `Layers` Panel will open up a menu with 
 
 ![The Attribute Table](images/attrib1.png)
 
-You may notice that, unlike in an Excel spreadsheet, you can't edit the contents of the attributes table. This is because QGIS opens Layers in read-mode only, to avoid accidental edition of the data. Later in this guide we will learn how to toggle `Edit mode` on to make modifications to the table, such as editing an attribute value or adding a new field.
+You may notice that, unlike in an Excel spreadsheet, you can't edit the contents of the attributes table. This is because QGIS opens Layers in read-mode only, to avoid accidental edition of the data. Later in this guide we will learn how to toggle `Edit mode` on to make modifications to the table, such as editing an attribute value, adding a new field or deleting features we don't need.
 
 [<<< Previous](4layerpr.md)  | [Next >>>](6layer2.md)  

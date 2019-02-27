@@ -2,7 +2,7 @@
 
 # Adding a Vector Layer
 
-Once you finish installing QGIS and downloading the required layers, go ahead and open the QGIS Desktop app. After loading, you should see something like this:
+When opening QGIS for the first time, you will see something like this:
 
 ![Layers in QGIS](images/layer1.png)
 
@@ -12,7 +12,7 @@ Whenever you add a layer to your project, it will be shown in the Layers Panel. 
 
 ![Add Vector Layer Window](images/layer2.png)
 
-Here, click on Browse, go in the BLOCKS folder and select the 061blk00s.zip file directly. When you select it and click on `Open`, you should get this:
+Here, click on Browse, go in the BLOCKS folder. You will see several files. Click one the one called "Blocks Study Area.sqlite". When you select it and click on `Open`, you should get this:
 
 ![Blocks Layer Added](images/layer3.png)
 

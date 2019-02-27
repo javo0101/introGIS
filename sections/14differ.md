@@ -1,6 +1,6 @@
 [<<< Previous](13lines2.md)  | [Next >>>](15calc.md)  
 
-# Geoprocessing Tools: Difference
+# Geoprocessing Tools: Difference and Clip
 
 Now we are ready to confront the hydrography buffer versus the elevation. To do this:
 
@@ -9,19 +9,26 @@ Now we are ready to confront the hydrography buffer versus the elevation. To do 
 
 `Difference` is a function like a geographic substraction: Wherever the two layers meet, the input layer will have substracted whatever trespasses the inner boundaries of the Difference layer.
 
-* Use the Hydro Buffer as the input and the Elevation Polygon as the Difference layer. 
+* Use the Hydro Buffer as the input and the Elevation Polygon as the Difference overlay layer. 
 * Be sure to check the `Ignore invalid input features` so that the operation goes smoothly.
+* If you run into issues, it could be due to CRS incompatibility. Make sure that both the input and overlay layers are in the same CRS (Select the buffer layer, click on Save as, then choose EPSG:4269).
 
 ![Geoprocessing Tools: Difference Dialog Box](images/differ1.png)
 
-Now we have a new layer called Difference. We are approaching the end of this brief exercise, so let’s clean the view a bit:
+Now we have a new layer called Difference, which represents the 500 meters from the coastline inland that is under a 15-meter elevation.
 
-* Turn off the visibility of all layers except for Difference, Blocks Study Area and Elevation Raster (you can turn this last one off if you want to, but it looks nice so you can leave it on).
+The last step is to identify the Census Blocks that are within this area. To do so, we will use another geoprocessing tool called `Clipping`. 
 
-The last step is actually repeating an operation we already did earlier: Clipping. We are going to clip the Blocks Study Area layer using the resulting Difference layer as a clipper, this way, we will have a layer that contains only the Blocks that will actually be vulnerable to the floods. So let’s rename this new “Clipped” layer, and call it “Vulnerable areas”. The resulting layer should look like this:
+`Clipping` basically works as a cookie cutter and selects all the features in a layer that are within the features of another layer, and removes anything that is outside these boundaries. To clip:
+
+* Navigate to the menu `Vector/Geoprocessing Tools`.
+* Click on `Clip`.
+* The input layer is the one that has the information you want to analyze. In this case, it is "Blocks Study Area".
+* The Overlay layer is the "Cookie cutter mold". This one will define the "shape" to be cut. So we will choose the Difference layer that resulted from the operation we did previously.
+* Click on `Run`.
 
 ![Rough Final Result after Clipping](images/differ2.png)
 
-And there we have it. The orange area is the Vulnerable Area. If we look at the attribute table of this layer, we can analyze the characteristics of the vulnerable population, according to the attributes that already existed in the original Census Blocks layer, such as Race, Age and Gender.
+And there we have it. The orange area is the Vulnerable Area (go ahead and give the new Clipped layer this name). If we look at the attribute table of this layer, we can analyze the characteristics of the vulnerable population, according to the attributes that already existed in the original Census Blocks layer, such as Race, Age and Gender.
 
 [<<< Previous](13lines2.md)  | [Next >>>](15calc.md)  

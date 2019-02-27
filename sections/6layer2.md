@@ -1,26 +1,33 @@
-[<<< Previous](5attrib.md)  | [Next >>>](7raster.md)  
+[<<< Previous](5attrib.md)  | [Next >>>](7editing.md)  
 
-# Adding a Second Vector Layer & Harmonizing CRS
+# Adding a Second and Third Vector Layer & Harmonizing CRS
 
-Now that we have customized our layer and seen the attribute table, let’s go ahead and open a second layer: the Hydrography one (061hyd00s.zip). Open it following the instructions for the Blocks layer. If you did it right, you will end up with a new window we hadn’t seen before, called the `Coordinate Reference System Selector`. The reason this happens is because the Hydrography layer, for some reason, did not have information about the CRS. So it is up to us to choose which CRS we want it to be projected on.
+Now that we have customized our layer and seen the attribute table, let’s go ahead and open a second layer:
 
-Note: if you did not get this dialog box, it could be due to the fact that `On-the-fly CRS` is on, which means that all layers you open will be adapted to the CRS of the first layer you opened, but if this is your first time using QGIS, you should get this. To turn off `On-the-fly`:
-
-* Click on the CRS name on the lower right.
-* Uncheck the box that reads `Enable On the Fly (OTF) Transformation`.
-* Click on `Accept`.
+* Click on the `Add Vector Layer` button.
+* Navigate to the HYDRO folder, and click on "HYDRO Study Area.sqlite".
+* You might get an error, or a warning. This is because the CRS was not defined for this file.
+* If the `Coordinate Reference System Selector` is prompted, select EPSG:4269 as the appropriate CRS.
 
 ![Choosing a CRS for the Hydro Layer](images/layer4.png)
 
-Now, since you want all layers to be in the same CRS, go ahead and look for the same projection of the Blocks layer. You may recall looking at it on the `Layer Properties` dialog box. Look for EPSG:4269, NAD83. You can write EPSG:4269 in the filter box and it will facilitate the search for you. Once you select the proper CRS, click `OK` and the layer should be projected on top of the Blocks one, like this:
+The reason you want to choose EPSG:4269 is because, if you recall, the Blocks layer is projected in that CRS. You want all layers to be in the same CRS because otherwise any geoprocessing operations you do involving two layers could have wrong results.  
+
+Even if you were not prompted to choose the CRS, you will see that the layer seems to be shown properly on the map (a line contouring the blocks). This might be due to the On-The-Fly option of QGIS, which automatically "translates" all layers into a single "project CRS" so that they can be visualized together.  
+
+Now, let's add the third layer:  
+
+* Click on the `Add Vector Layer button`.
+* Navigate to the ELEVATION folder, and click on "15m Elevation Polygons.sqlite".  
+* Click on `Add` to close the window.
 
 ![Two Projected Layers](images/layer5.png)
 
-Congratulations, now you have two layers on QGIS. Feel free to explore the new layers attribute table, properties, change the color, and I also recommend that you rename both layers to something more practical, like “Blocks” and “Hydro”. This is a good idea so that you can always easily locate the main layers, as the operations that we will do will multiply the number of layers. To rename a layer:
+Congratulations, now you have three layers on QGIS. Feel free to explore the new layers' attribute tables, properties, change the colors. Sometimes, layers you use have weird names (numbers, codes, etc.). If this were the case, I recommend that you rename layers to something more practical, like “Blocks” and “Hydro”. This is a good idea so that you can always easily locate the main layers, as the operations that we will do will multiply the number of layers and you do not want to get lost in your data. To rename a layer:
 
 * Right-click on its name in the layers panel.
 * Select the last option in the menu, `rename`. 
 
-You can also toggle the visibility of layers on/off by clicking on the `X` to the left of the layer’s name. Also remember that you can make a layer transparent in the `Style` tab of the `Properties` dialog box. Further, you can drag and drop layers in your preferred order, knowing that the most visible layer (the one on top) will always be the first one. Knowing these features will be useful when too many layers are open and you want to focus on a specific group or one in particular.
+You can also toggle the visibility of layers on/off by clicking on the checkbox to the left of the layer’s name. Also remember that you can make a layer transparent in the `Style` tab of the `Properties` dialog box. Further, you can drag and drop layers in your preferred order, knowing that the most visible layer (the one on top) will always be the first one. Knowing these features will be useful when too many layers are open and you want to focus on a specific group or one in particular.
 
-[<<< Previous](5attrib.md)  | [Next >>>](7raster.md)  
+[<<< Previous](5attrib.md)  | [Next >>>](7editing.md)  

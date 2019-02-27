@@ -13,14 +13,9 @@ This tutorial will guide you through the very basics of GIS mapping concepts. Th
 [Adding a Vector Layer](sections/3layer1.md)  
 [Layer Properties & Customization](sections/4layerpr.md)  
 [The Attribute Table](sections/5attrib.md)  
-[Adding a Second Vector Layer & Harmonizing CRS](sections/6layer2.md)  
-[Adding a Raster Layer](sections/7raster.md)  
-[Creating a New Vector Layer](sections/8newlayr.md)  
-[Drawing a Polygon](sections/9polydrw.md)  
-[Geoprocessing Tools: Clipping](sections/10clip.md)  
+[Adding a Second and Third Vector Layer & Harmonizing CRS](sections/6layer2.md)  
+[Editing a Layer and Deleting Features](sections/7editing.md)  
 [Adding a Plugin & Creating a Buffer Zone](sections/11buffer.md)  
-[Extracting the Contour from a Raster Image](sections/12cntour.md)  
-[Geometry Tool: Lines to Polygons](sections/13lines2.md)  
 [Geoprocessing Tools: Difference](sections/14differ.md)  
 [Using the Field Calculator](sections/15calc.md)  
 [Calculating Percentages with the Field Calculator](sections/16calc2.md)  
@@ -31,8 +26,19 @@ This tutorial will guide you through the very basics of GIS mapping concepts. Th
 
 -----
 
-Session leader: Javier Otero Peña  
-Based on previous work by: Javier Otero Peña 
+**Session leader**: Javier Otero Peña  
+**Based on previous work by**: Javier Otero Peña  
+
+-----
+## Deprecated Sections
+[Adding a Raster Layer](sections/7raster.md)  
+[Creating a New Vector Layer](sections/8newlayr.md)  
+[Drawing a Polygon](sections/9polydrw.md)  
+[Geoprocessing Tools: Clipping](sections/10clip.md)  
+[Extracting the Contour from a Raster Image](sections/12cntour.md)  
+[Geometry Tool: Lines to Polygons](sections/13lines2.md)  
+
+-----
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 

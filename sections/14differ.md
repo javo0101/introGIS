@@ -1,4 +1,4 @@
-[<<< Previous](13lines2.md)  | [Next >>>](15calc.md)  
+[<<< Previous](11buffer.md)  | [Next >>>](15calc.md)  
 
 # Geoprocessing Tools: Difference and Clip
 
@@ -31,4 +31,4 @@ The last step is to identify the Census Blocks that are within this area. To do 
 
 And there we have it. The orange area is the Vulnerable Area (go ahead and give the new Clipped layer this name). If we look at the attribute table of this layer, we can analyze the characteristics of the vulnerable population, according to the attributes that already existed in the original Census Blocks layer, such as Race, Age and Gender.
 
-[<<< Previous](13lines2.md)  | [Next >>>](15calc.md)  
+[<<< Previous](11buffer.md)  | [Next >>>](15calc.md)  

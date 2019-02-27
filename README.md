@@ -20,8 +20,8 @@ This tutorial will guide you through the very basics of GIS mapping concepts. Th
 [Using the Field Calculator](sections/15calc.md)  
 [Calculating Percentages with the Field Calculator](sections/16calc2.md)  
 [Changing the Visualization of a Layer](sections/17viz.md)  
-[Additional Layers and Ideas for Analysis](sections/18extra.md)  
 [Layout: Making a printable and shareable product with QGIS](sections/19layout.md)  
+[Additional Layers and Ideas for Analysis](sections/18extra.md)  
 [More Resources](sections/20more.md)  
 
 -----

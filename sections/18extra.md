@@ -95,4 +95,4 @@ Here are some ideas to use this layer:
 - Open the attributes table. You will notice a column called "Category". This refers to the category of hurricanes. If we select categories 1 & 2, we can notice that the selected area resembles the Vulnerable Area of our study, so perhaps our simulated event was in fact equivalent to a Category 2 Hurricane.
 - Note that due to the complexity of this layer, operations such as Clipping will take much longer. Since we are only using this layer for comparative purposes, there is no need to clip it to our study area. We can just turn the layer off once we are done comparing.
 
-[<<< Previous](19layout.md)  | [Next >>>](20extra.md)  
+[<<< Previous](19layout.md)  | [Next >>>](20more.md)  

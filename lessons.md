@@ -356,7 +356,7 @@ Let’s have a quick look at the legend to make sure that it will be informative
 4. Then click on the three dots for **More Options** and select **Rename**.
 5. Do this for both layers to rename them something that's easier to read. I’m going to name mine “BLM Protests (May 28 to June 3, 2020)” and “NYC Neighborhoods by Percent Black.”
 
-![legend](images/legend.png)
+![legend](images/viewlegend.png)
 
 # 13. Saving and Sharing Your Map
 

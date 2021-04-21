@@ -198,7 +198,7 @@ Now we’re ready to export the data.
 3. Next, you can click off the check box at the very bottom of the “Save Vector Layer as…” configuration box, where it says **Add saved file to map**. Since we already have this as a map layer in QGIS, there’s no need to add it as another layer in the software. 
 4. You can leave everything else in the configuration alone. Lastly, click **OK** to complete exporting the data. 
 
-![export shapefile](images/exportfile.png)
+![export shapefile](images/exportnew.png)
 
 Navigate to your “NYCntaPerBlack” folder and check to see if all of the shapefiles are in there. If they are, then your export was successful. 
 

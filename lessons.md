@@ -218,8 +218,153 @@ Let’s get acquainted with the interface.
 
 ![ArcGISOnline Interface](images/arcgisinterface.png)
 
+Now let’s import and format our neighborhoods shapefile.
 
+1. Click on **Add**.
+2. Click **Add Layer from File**. 
+3. Select **Choose File**. And navigate to where you have the zipped/compressed “NYCntaPerBlack” file saved on your computer.
+4. Feel free to leave the option “Generalize features for web display” selected. I’ve tried making maps with both this option and “Keep original features” and I’ve never noticed any difference. 
+ 5. Click **Import Layer**.
 
+You should now see something that looks like a map of New York City, colored in by the Borough or another attribute. ArcGIS automatically selects an attribute to use to show on the map. 
+
+# 7. Changing the Map Style
+![changing the symbology](images/shapefileimport.png)
+
+Let’s change the attribute so that it shows the percent Black population of New York City’s neighborhoods.
+
+1. Under **Choose an attribute to show**, select “BINHP” which stands for Black Non-Hispanic Population. 
+2. Click around with the Drawing Styles to see which you think works best. 
+3. For this demo, let’s use the first option, which is a choropleth map style that shows the value by the intensity of the color. 
+4. Let’s change the color to something different. 
+    - In the **Counts and Amounts** (Color) box click **Options**. 
+    - Click **Symbols**, and change the color. I’m selecting the black/white color ramp since I think it fits in with the story I’m trying to tell. 
+    - Once you’ve chosen your color ramp, click **OK**. 
+    - Optional: You can click on **Classify** if you want to change how the data is visualized and how many categories are created. “Natural breaks” is a good option because it increases variability between classes while decreasing it within classes. 
+    - Click the **OK** button at the bottom of the Layers Panel. 
+    - Finally, click **Done** to save your changes to the map. If you don’t click Done, it will revert to what you had before. 
+
+You should now see your maps styled with your new color ramp. You’ll also see the “NYCntaPerBlack” map layer in the Layers Panel. And if you click on your map you’ll see a pop-up with all of the information contained in the attribute table.
+
+# 8. Configuring the Pop-up
+![the default popup](images/uglypopup1.png)
+
+As you’ll see, the pop-up doesn’t look very nice. The names won’t make much sense to the map viewer, and the viewer probably wouldn’t be interested in information like the “nta code”. Let’s configure our pop-up so that it looks better.
+
+1. In the map Layers Panel, **hover over** where it has the name of the shapefile “NYCntaPerBlack”, and you will see some options appear below it--”show legend”, “show table”, “change style”, and “more options.”
+2. Select **More options** (this is the three dots below the name of the map layer).
+3. Select **Configure Pop-up**. The Layers Panel will turn into a panel for configuring the pop-up. 
+
+![configure popup interface](images/configurepopup.png)
+
+Let’s explore the options that we have for the pop-up. 
+
+1. The first thing you’ll see is a checkbox for turning on and off the pop-up. We’re going to leave ours on. 
+2. In the **Pop-up Title**, you can enter a name that will be displayed at the top of every pop-up box. You can type in something. Or you can have one of the attributes displayed. Let’s have the neighborhood name displayed in the pop-up title. To do this, **click the plus sign** to the right of the text box and select “ntaname”. Next to “ntaname” write “( Black%). So now the title will show the name of the neighborhood and the text “(Black%)”. 
+3. In the **Display**, select the drop down to see the list of options. The options for what you can display in the pop-up are “A list of attributes”, “A description from one field”, “A custom attribute display”, and “no attribute information”. We are going to select **A description from one field** since we are only interested in showing the value for Percent Black. Then in the next drop down **select “BINHP”**.
+4. Then click OK to save our changes. 
+
+Now when you click on the map you should see a popup with just the name of the neighborhood plus the text (Black%) and then in the box you will see the value for Percent Black. 
+
+![second configure popup prompt](images/configurepopup2.png)
+
+# 9. Importing CSV file and Geocoding Addresses
+
+Now we’re ready to import our next mapping layer. This one will be the CSV file that we have of several BLM protests that took place during one week in June. We want to layer this data as points on our choropleth map in order to see if the protests tended to take place in neighborhoods that were majority Black, or not. 
+
+Let’s import the file.
+
+1. Select **Add**.
+2. Select **Add Layer from File**. 
+3. Select **Choose File**, and navigate to where you have the file “1 Week of Protests.csv” saved on  your computer. 
+4. Select **Import Layer**.
+
+At this point a box should appear that says “Add CSV Layer” at the top and has information about location, coordinates and addresses. This is the mapping softwares way of asking you if you want to convert the addresses that are stored in the CSV file into points on the map. This process is called “geocoding.” Geocoding will only work if you have addresses or coordinates stored in your CSV file, and luckily we do! If you open the CSV file in a spreadsheet manager, you’ll see that we have the fields “address”, “city”, “state” and “zip”. This is all the geocoder will need to be able to locate the address for each protest and create a map layer of points. 
+
+To geocode the CSV file, the **Field Name** column (pulled from the CSV file) needs to match with the **Location Fields** column (which is the geocoder column). Make sure that the following fields match:
+
+1. Field Name: Address  =  Location Fields: Address or Place
+2. Field Name: City  =  Location Fields: City
+3. Field Name: State =  Location Fields: State
+4. Field Name: Zip  =  Location Fields: Zip
+
+If they don’t match, then click on the cell(s) to change it. Most likely, since the mapping software is pretty good at this stuff, they will all be automatically matched, so you won’t have to change anything. Finally, click **Add Layer**.
+
+Note: ArcGIS will only geocode up to 100 entries. If you have more than 100 then you can use the Census Geocoder, which geocodes up to 1000 entries
+
+![add csv](images/addcsv.png)
+
+# 10. Changing the Style of the Points Layer
+
+Now you should see a series of points on top of the neighborhood map layer. ArcGIS Online will automatically choose an attribute to use to style the point layer. In my example it chose “Start location.” 
+
+Let’s change the style of the points layer. I’m not really interested in displaying any particular attribute along with the protests. I just want to see the location of the protests. 
+1. Under **Choose an attribute to show**, select “Show location only.”
+2. Now let’s change the color of the points. In the box that says Location (single symbol) choose **OPTIONS**. 
+3. Select Symbols. 
+4. Feel free to play around with the options for the style of the point. You can change the shape, the fill color, the outline, and the size. You can even upload your own image. For mine, I chose an orange star that’s size 12.
+5. Select **OK**.
+6. And select **OK** again.
+7. Finally, select **DONE** to save your changes.  
+
+![point layer formatted](images/protestsformatted2.png)
+
+With this map we should already be able to answer our research question. We wanted to know if there might be a relationship between the location of BLM protests and the racial demographic of the neighborhood, specifically if the neighborhood is majority Black. Here we can already see little correlation between the location of the protests and the racial demographic of the neighborhood. We can observe, however, that many of the protests are taking place in centrally located places in Manhattan and in some parts of Brooklyn. If we start clicking on the points we’ll also see that many of the location starting points are popular sites and meeting places, such as Times Square, Union Square, and Bryant Park. 
+
+# 11. Formatting the Pop-ups for the Protest Locations
+
+Let’s format the pop-ups for the protest locations so that the map viewer can learn more about the sites. The attributes that can be displayed are: “Date”, “Start Location”, “Address”, “City”, “State”, “Zip”, “Photo”,	“Details”. 
+
+Out of these options, let’s display the “Start location”, “photo” and “details.”
+
+1. In the **Map Layers Panel**, hover over where it has the name of the points layer “1 Week of Protest” and select the three dots for **More Options**. Then select **Configure Pop-up**.
+2. In **Pop-up Title** write “BLM Protest”
+3. In **Display** select “A list of field attributes.”
+4. Select **Configure Attributes**. 
+
+Now you should see a place where you can decide which attributes to display by clicking the checkboxes under the **Display** column. You can also edit the **TextBox Type** by having the checkboxes under the **Edit** column selected. Lastly, you can change the name that appears for the attribute in the pop-up. To do this click on the words in the column **Field Alias** and it will allow you to put in new text. Let’s try some of these options.
+
+1. In the **Display** column select “Start Location” and “Details.” Even though we also want to add “photo” we are not going to check that off here. Media needs to be configured through a different process, which we’ll do next. 
+2. You don’t have to change anything in the **Edit** column. 
+3. Under Field Alias click on the word “Details” and change it to “Protest info.”
+4. Click OK.
+
+![popup for protest layer](images/popupprotest1.png)
+
+Now let’s add our photo to the pop-up.
+
+1. Under **Pop-up Media** select **Add < Image**. 
+2. In **Title** delete the text and leave it blank.
+3. Leave the Caption blank.
+4. For the **URL**, click the plus sign and select “Photo”. You might have to scroll down to find it in the list of attributes. 
+5. Click **OK**.
+
+![configure pop up image](images/configureimage.png)
+
+Click **OK** again to save your changes. 
+
+Now you should see a nicer looking pop-up when you click on the points on your map. Some points don’t have any “Protest info”, but for all of them you should see the “Start location” and photo. 
+
+![final pop up](images/finalpopupdone.png)
+
+# 12. Formatting the Legend 
+Let’s have a quick look at the legend to make sure that it will be informative for our map viewer. 
+
+1. In the Map Layers Panel, at the top you should see three icons--an “i” with a blue circle around it, followed by a paper with blue writing, and then a bulleted list. Click on the icon that looks like a bulleted list; that's the legend icon. 
+2. I think the legend generally looks okay, but it’s displaying the name of the map layer, which can be a little confusing for the viewer, especially the layer “NYCntaPerBlack.” Let’s rename the layers to it will be easier for the viewer to understand.
+3. Go back to the Map Layer panel where you can see the hyperlinked layers. You can do this by clicking the icon that looks like a white sheet of paper with blue writing.
+4. Then click on the three dots for More Options and select Rename.
+5. Do this for both layers to rename them something that's easier to read. I’m going to name mine “BLM Protests (May 28 to June 3, 2020)” and “NYC Neighborhoods by Percent Black.”
+
+![legend](images/legend.png)
+
+# 13. Saving and Sharing Your Map
+
+Now it’s finally time to save and share your map!
+
+To save the map, click the Save button (with the floppy disk icon). Enter your title, tags, and summary to describe the map. Then click Save Map.
+
+![save map](images/savemap.png)
 
 
 ## Challenge: Here you can put a title

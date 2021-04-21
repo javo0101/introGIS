@@ -353,7 +353,7 @@ Let’s have a quick look at the legend to make sure that it will be informative
 1. In the Map Layers Panel, at the top you should see three icons--an “i” with a blue circle around it, followed by a paper with blue writing, and then a bulleted list. Click on the icon that looks like a bulleted list; that's the legend icon. 
 2. I think the legend generally looks okay, but it’s displaying the name of the map layer, which can be a little confusing for the viewer, especially the layer “NYCntaPerBlack.” Let’s rename the layers to it will be easier for the viewer to understand.
 3. Go back to the Map Layer panel where you can see the hyperlinked layers. You can do this by clicking the icon that looks like a white sheet of paper with blue writing.
-4. Then click on the three dots for More Options and select Rename.
+4. Then click on the three dots for **More Options** and select **Rename**.
 5. Do this for both layers to rename them something that's easier to read. I’m going to name mine “BLM Protests (May 28 to June 3, 2020)” and “NYC Neighborhoods by Percent Black.”
 
 ![legend](images/legend.png)
@@ -362,9 +362,16 @@ Let’s have a quick look at the legend to make sure that it will be informative
 
 Now it’s finally time to save and share your map!
 
-To save the map, click the Save button (with the floppy disk icon). Enter your title, tags, and summary to describe the map. Then click Save Map.
+1. To save the map, click the **Save** button (with the floppy disk icon). Enter your title, tags, and summary to describe the map. Then click **Save Map**.
 
 ![save map](images/savemap.png)
+
+2. To share your map, click on the **Share** button (with the chain link icon). 
+3. Click the checkmark next to **Everyone (public)** so that you can share the map with the public. Once you do that, all of the share options will become available to you, including sharing the URL to the map or getting embed code to put the map on a website. 
+
+
+Congratulations! You’ve made a pretty cool interactive map with two layers of spatial data, multiple pop-ups, and even multimedia with your pop-ups!
+
 
 
 ## Challenge: Here you can put a title

@@ -28,8 +28,7 @@ Customize an interactive map.
 
 ## Datasets
 
-- Please download the dataset **(need to add 
-the link from gcdf folder)** [here](<https://tinyurl.com/45h7bfam>).
+- Please download the dataset[here](<https://github.com/DHRI-Curriculum/mapping/tree/v2.0-olivia-edits/dataset>).
 - Check out a version of the map we are going to make in this workshop [here](<http://arcg.is/1KyC9O >).
 
 ## Installations

@@ -37,8 +37,7 @@ In this section, we outline a few steps to take before you get started with this
 
 Software installations
 - To complete this workshop you will need to install QGIS. 
-    - Please, visit this page, and download the first option thats available under the section that says “Long term release repository (most stable).” As of February 23, 2021, the option for a Windows computer would be the “QGIS Standalone Installer Version 3.10 (64 bit)”, and and the option for a Mac computer would be “QGIS macOS Installer Version 3.10.” The directions for downloading the software onto a Linux computer are provided at this link. 
-- For step by step installation instructions **add link**. 
+    - For step by step [installation instructions](<https://github.com/DHRI-Curriculum/install/blob/main/sections/qgis.md>).
 - Create a free ESRI Online [Public account.](<https://doc.arcgis.com/en/arcgis-online/get-started/create-account.htm>)
 
 

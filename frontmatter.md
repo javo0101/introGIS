@@ -24,22 +24,14 @@ Customize an interactive map.
 
 ## Prerequisites
 
-- [Data Literacies](https://github.com/DHRI-Curriculum/data-literacies) (optional) This workshop /_insert here a reason why the data literacies workshop is good to start with_/...
+- [Data Literacies](https://github.com/DHRI-Curriculum/data-literacies) (optional) This workshop /_insert here a reason why the data literacies workshop is good to start with_/...To complete this workshop you will need to install QGIS. Step by step installation instructions are available here.
+- [QGIS](https://github.com/DHRI-Curriculum/install/blob/main/sections/qgis.md) (required) 
+- [Create an ESRI Online Public account](https://doc.arcgis.com/en/arcgis-online/get-started/create-account.htm) You will also need to create a free account for ESRI Online to participate in this workshop.
 
 ## Datasets
 
-- Please download the dataset [here](<https://github.com/DHRI-Curriculum/mapping/tree/v2.0-olivia-edits/dataset>).
-- Check out a version of the map we are going to make in this workshop [here](<http://arcg.is/1KyC9O >).
-
-## Installations
-In this section, we outline a few steps to take before you get started with this workshop. For instance, you will need to download the mapping software QGIS. You will also need to create an account for ESRI Online. And lastly, we recommend that you download the data needed for the workshop.
-
-Software installations
-- To complete this workshop you will need to install QGIS. 
-    - For step by step [installation instructions](<https://github.com/DHRI-Curriculum/install/blob/main/sections/qgis.md>).
-- Create a free ESRI Online [Public account.](<https://doc.arcgis.com/en/arcgis-online/get-started/create-account.htm>)
-
-
+- [Download the dataset we will work with by clicking here](https://github.com/DHRI-Curriculum/mapping/tree/v2.0-olivia-edits/dataset).
+- [Look at a version of the map we are going to make in this workshop](http://arcg.is/1KyC9O).
 
 ## Contexts
 

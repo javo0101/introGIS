@@ -20,7 +20,7 @@ Customize an interactive map.
 
 ## Estimated time
 
-4 hours.
+4 hours
 
 ## Prerequisites
 

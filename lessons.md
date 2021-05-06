@@ -1,4 +1,4 @@
-# 1. Introduction to Mapping
+# Introduction to Mapping
 
 Making a map is like learning a new language, it’s a slow and frustrating process because there are a lot of concepts unique to mapping and almost none of it makes sense in the beginning. This first part of the workshop is a very quick overview of mapping concepts to help orient you to the process of mapmaking. 
 
@@ -22,7 +22,7 @@ Voilà!
 
 Another mapping concept that’s important to know is that the visualizations that are displayed on the map are called the map’s ‘features’ and the data that’s connected to those shapes are called the maps ‘attributes.’ Attribute data is stored in an attribute table, which is a lot like spreadsheet. One feature on the map can contain many attributes--the feature for the state of Florida has the attributes “STATEFP” (the state ID), “STUSPS” (the state abbreviation), “NAME” (the state name), etc. Any type of data that you have at the scale of the state can be put in this attribute table. The attribute table stores all of the data and then you decide what data you want to visualize.  
 
-# 2. Mapping Tools
+# Mapping Tools
 
 There are a few questions to consider that will help you choose the right tool for mapping:
 
@@ -47,7 +47,7 @@ Here is a quick comparison for some of the mapping software that you can use to 
 
 The only option that is truly free is Leaflet, but it requires familiarity with coding. You can read more about the benefits and limitations of these tools in [this article](<https://digitalfellows.commons.gc.cuny.edu/2019/06/03/finding-the-right-tools-for-mapping/>)
 
-# 3. Ethics of Mapping
+# Ethics of Mapping
 ![quote about power and mapping](images/quote1.png)
 
 In introduction to mapping courses we are often told that every map starts with a lie--that the earth is flat. From the first step of having to choose a mapping projection and decide on which types of inaccuracies you would be willing to sacrifice, the process of mapping is filled with ethical choices. Over the years, many of these decisions have been obscured through a greater reliance on technology. Today, (far too many) mapmakers allow the software to make decisions for them. However, whether these are active or passive decisions, they are still decisions that affect the map and the viewers interpretation of the map.
@@ -82,7 +82,7 @@ For more about the history of mapping, and to learn about current countermapping
 - [Counter Mapping:](<https://emergencemagazine.org/feature/counter-mapping/>) Zuni Maps
 
 
-# 4. Making an Interactive Map Demo: Introduction
+# Making an Interactive Map Demo: Introduction
 
 ## Research Question
 
@@ -102,7 +102,7 @@ What kind of data do we need to make this map?
 
 To get a better idea of what we will be building together, you can see a final version of the [map here](<http://arcg.is/1KyC9O >). 
 
-# 5. Combining Data Through a Spatial Join
+# Combining Data Through a Spatial Join
 ![combining data](images/data.png)
 
 When we think about how the data will be visualized in the map, we will be turning the location of the protests into a layer of points. And we will be stacking the point layer on top of a polygon layer, which are the neighborhoods. Since our neighborhood data--the features stored in the Shapefile and the CSV with the data on race--are in two separate files, we’ll need to perform a ‘spatial join’ to combine them into one file. 
@@ -122,7 +122,7 @@ When you open QGIS, you’ll see an interface that looks like this:
 ![QGIS interface](images/qgisinterface.png)
 
 
-# 6. Performing a Spatial Join
+# Performing a Spatial Join
 
 ## Adding data to QGIS
 
@@ -204,7 +204,7 @@ Navigate to your “NYCntaPerBlack” folder and check to see if all of the shap
 
 The last thing we have to do is **zip or compress** the folder. ArcGIS Online will only import zipped shapefiles. If you’re working on a Mac, right click on the “NYCntaPerBlack” folder and click **compress**. If you’re on a PC, right click on the “NYCntaPerBlack” folder and select Send to and then **Compressed (zipped) folder**.
 
-# 6. Importing data to ArcGIS Online
+# Importing data to ArcGIS Online
 
 First, you’ll have to set yourself up with a free ArcGIS Online public account.
 
@@ -228,7 +228,7 @@ Now let’s import and format our neighborhoods shapefile.
 
 You should now see something that looks like a map of New York City, colored in by the Borough or another attribute. ArcGIS automatically selects an attribute to use to show on the map. 
 
-# 7. Changing the Map Style
+# Changing the Map Style
 ![changing the symbology](images/shapefileimport.png)
 
 Let’s change the attribute so that it shows the percent Black population of New York City’s neighborhoods.
@@ -246,7 +246,7 @@ Let’s change the attribute so that it shows the percent Black population of Ne
 
 You should now see your maps styled with your new color ramp. You’ll also see the “NYCntaPerBlack” map layer in the Layers Panel. And if you click on your map you’ll see a pop-up with all of the information contained in the attribute table.
 
-# 8. Configuring the Pop-up
+# Configuring the Pop-up
 ![the default popup](images/uglypopup1.png)
 
 As you’ll see, the pop-up doesn’t look very nice. The names won’t make much sense to the map viewer, and the viewer probably wouldn’t be interested in information like the “nta code”. Let’s configure our pop-up so that it looks better.
@@ -268,7 +268,7 @@ Now when you click on the map you should see a popup with just the name of the n
 
 ![second configure popup prompt](images/configurepopup2.png)
 
-# 9. Importing CSV file and Geocoding Addresses
+# Importing CSV file and Geocoding Addresses
 
 Now we’re ready to import our next mapping layer. This one will be the CSV file that we have of several BLM protests that took place during one week in June. We want to layer this data as points on our choropleth map in order to see if the protests tended to take place in neighborhoods that were majority Black, or not. 
 
@@ -294,7 +294,7 @@ Note: ArcGIS will only geocode up to 100 entries. If you have more than 100 then
 
 ![add csv](images/addcsv.png)
 
-# 10. Changing the Style of the Points Layer
+# Changing the Style of the Points Layer
 
 Now you should see a series of points on top of the neighborhood map layer. ArcGIS Online will automatically choose an attribute to use to style the point layer. In my example it chose “Start location.” 
 
@@ -311,7 +311,7 @@ Let’s change the style of the points layer. I’m not really interested in dis
 
 With this map we should already be able to answer our research question. We wanted to know if there might be a relationship between the location of BLM protests and the racial demographic of the neighborhood, specifically if the neighborhood is majority Black. Here we can already see little correlation between the location of the protests and the racial demographic of the neighborhood. We can observe, however, that many of the protests are taking place in centrally located places in Manhattan and in some parts of Brooklyn. If we start clicking on the points we’ll also see that many of the location starting points are popular sites and meeting places, such as Times Square, Union Square, and Bryant Park. 
 
-# 11. Formatting the Pop-ups for the Protest Locations
+# Formatting the Pop-ups for the Protest Locations
 
 Let’s format the pop-ups for the protest locations so that the map viewer can learn more about the sites. The attributes that can be displayed are: “Date”, “Start Location”, “Address”, “City”, “State”, “Zip”, “Photo”,	“Details”. 
 
@@ -347,7 +347,7 @@ Now you should see a nicer looking pop-up when you click on the points on your m
 
 ![final pop up](images/finalpopupdone.png)
 
-# 12. Formatting the Legend 
+# Formatting the Legend 
 Let’s have a quick look at the legend to make sure that it will be informative for our map viewer. 
 
 1. In the Map Layers Panel, at the top you should see three icons--an “i” with a blue circle around it, followed by a paper with blue writing, and then a bulleted list. Click on the icon that looks like a bulleted list; that's the legend icon. 
@@ -358,7 +358,7 @@ Let’s have a quick look at the legend to make sure that it will be informative
 
 ![legend](images/viewlegend.png)
 
-# 13. Saving and Sharing Your Map
+# Saving and Sharing Your Map
 
 Now it’s finally time to save and share your map!
 

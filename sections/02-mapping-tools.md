@@ -1,6 +1,6 @@
 ← [Introduction to Mapping](01-introduction-to-mapping.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Ethics of Mapping](03-ethics-of-mapping.md) →
 
----
+—-
 
 # 2. Mapping Tools
 
@@ -19,7 +19,7 @@ Both ArcGIS and QGIS are software that you download onto your computer and can b
 
 ![composite map tool chart comparison](../images/toolscomparison.png)
 
-For this workshop we will be using QGIS to perform spatial operations on our data. This is because QGIS is free and open source! It’s one limitation is that it doesn’t offer a way to make interactive maps. ArcGIS does offer an online version that can be used to make interactive maps, but the limitation is that you need a paid subscription if you want to perform spatial operations. So for this workshop we’re going to do a little hack in which we use two different mapping tools so we can have a completely free experience :) We will use QGIS to perform spatial operations. And then we will export the data and upload it into ArcGIS Online to make our interactive map. 
+For this workshop we will be using QGIS to perform spatial operations on our data. This is because QGIS is free and open source! It's one limitation is that it doesn't offer a way to make interactive maps. ArcGIS does offer an online version that can be used to make interactive maps, but the limitation is that you need a paid subscription if you want to perform spatial operations. So for this workshop we're going to do a little hack in which we use two different mapping tools so we can have a completely free experience :) We will use QGIS to perform spatial operations. And then we will export the data and upload it into ArcGIS Online to make our interactive map. 
 
 Here is a quick comparison for some of the mapping software that you can use to make an interactive map. 
 
@@ -27,6 +27,6 @@ Here is a quick comparison for some of the mapping software that you can use to 
 
 The only option that is truly free is Leaflet, but it requires familiarity with coding. You can read more about the benefits and limitations of these tools in [this article](<https://digitalfellows.commons.gc.cuny.edu/2019/06/03/finding-the-right-tools-for-mapping/>)
 
----
+—-
 
 ← [Introduction to Mapping](01-introduction-to-mapping.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Ethics of Mapping](03-ethics-of-mapping.md) →

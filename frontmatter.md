@@ -7,7 +7,7 @@ In the past decade, interactive maps have become one of the most popular ways to
 ## Learning Objectives
 In this workshop, you will learn to:
 - Become familiar with fundamental mapping concepts, such as how spatial data is organized and displayed. 
-- Distinguish among two different forms of spatial data--vector data and raster data.
+- Distinguish among two different forms of spatial data—vector data and raster data.
 - Consider some of the core ethical dilemmas of mapmaking.
 - Understand the difference between the most popular mapping software. 
 - Import and export data between different mapping tools. 
@@ -55,7 +55,7 @@ Software installations
 
 - [Mapping Occupation](<https://gcdi.commons.gc.cuny.edu/mapping-occupation-the-union-army-and-the-meaning-of-reconstruction/>)
 
-- [NYC’s Worst Evictors](<https://www.worstevictorsnyc.org/map/>)
+- [NYC's Worst Evictors](<https://www.worstevictorsnyc.org/map/>)
 
 - [Torn Apart/Separados](<http://xpmethod.columbia.edu/torn-apart/volume/2/index>)
 
@@ -65,9 +65,9 @@ Software installations
 
 
 ### Ethical Considerations
-Starting from figuring out how to represent a 3D reality on a 2D plane, there are countless subjective decisions that every mapmaker must make, whether they are conscious of it or not. Mapmakers need to decide what data to represent and what to leave out. They also need to decide how to aggregate, categorize, project, combine, and visualize the data. All of these decisions will influence the story that the map tells. Additionally, as a critical tool of Western colonialism and imperialism, maps wield great authority. As mapmakers, it’s essential to be conscious of this history not to reproduce harmful power dynamics through mapmaking. Once something is visualized in the form of a map, it is often understood as a Truth representation of reality. Therefore, mapmakers have an important responsibility to be as honest and transparent as possible. Since the 1980’s, there have been two emerging disciplines in academia--critical cartography and feminist GIS--that have brought to light many of the harmful applications of mapping. Rather than reject mapping, they have made significant contributions to the field of GIS and mapping, such as counter mapping, sketch mapping, participatory mapping, qualitative GIS and 3D body-mapping. The following readings will introduce you to some of the fundamental insights from critical cartography and feminist GIS that you can integrate into your mapping journey. The reading list also includes modern-day counter mapping projects.
+Starting from figuring out how to represent a 3D reality on a 2D plane, there are countless subjective decisions that every mapmaker must make, whether they are conscious of it or not. Mapmakers need to decide what data to represent and what to leave out. They also need to decide how to aggregate, categorize, project, combine, and visualize the data. All of these decisions will influence the story that the map tells. Additionally, as a critical tool of Western colonialism and imperialism, maps wield great authority. As mapmakers, it's essential to be conscious of this history not to reproduce harmful power dynamics through mapmaking. Once something is visualized in the form of a map, it is often understood as a Truth representation of reality. Therefore, mapmakers have an important responsibility to be as honest and transparent as possible. Since the 1980's, there have been two emerging disciplines in academia—critical cartography and feminist GIS—that have brought to light many of the harmful applications of mapping. Rather than reject mapping, they have made significant contributions to the field of GIS and mapping, such as counter mapping, sketch mapping, participatory mapping, qualitative GIS and 3D body-mapping. The following readings will introduce you to some of the fundamental insights from critical cartography and feminist GIS that you can integrate into your mapping journey. The reading list also includes modern-day counter mapping projects.
 
-- Harley, J. B. (1989). [Deconstructing the map. Cartographica: The international journal for geographic information and geovisualization](<https://quod.lib.umich.edu/p/passages/4761530.0003.008/--deconstructing-the-map?rgn=main;view=fulltext>), 26(2), 1-20.
+- Harley, J. B. (1989). [Deconstructing the map. Cartographica: The international journal for geographic information and geovisualization](<https://quod.lib.umich.edu/p/passages/4761530.0003.008/—deconstructing-the-map?rgn=main;view=fulltext>), 26(2), 1-20.
     - This is a classic text by Brian Harley – one of the first Foucauldian analyses of mapping.
 - Pavlovskaya, M., & Martin, K. S. (2007). [Feminism and geographic information systems: From a missing object to a mapping subject](<https://onlinelibrary.wiley.com/doi/full/10.1111/j.1749-8198.2007.00028.x>). Geography Compass, 1(3), 583-606.
     - This article makes the case for feminist GIS. 

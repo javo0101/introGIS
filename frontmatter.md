@@ -24,22 +24,14 @@ Customize an interactive map.
 
 ## Prerequisites
 
-- [Data Literacies](https://github.com/DHRI-Curriculum/data-literacies) (optional)
+- [Data Literacies](https://github.com/DHRI-Curriculum/data-literacies) (optional) This workshop /_insert here a reason why the data literacies workshop is good to start with_/...To complete this workshop you will need to install QGIS. Step by step installation instructions are available here.
+- [QGIS](https://github.com/DHRI-Curriculum/install/blob/main/sections/qgis.md) (required) 
+- [Create an ESRI Online Public account](https://doc.arcgis.com/en/arcgis-online/get-started/create-account.htm) You will also need to create a free account for ESRI Online to participate in this workshop.
 
 ## Datasets
 
-- Please download the dataset [here](https://github.com/DHRI-Curriculum/mapping/tree/v2.0-olivia-edits/dataset).
-- Check out a version of the map we are going to make in this workshop [here](http://arcg.is/1KyC9O ).
-
-## Installations
-In this section, we outline a few steps to take before you get started with this workshop. For instance, you will need to download the mapping software QGIS. You will also need to create an account for ESRI Online. And lastly, we recommend that you download the data needed for the workshop.
-
-Software installations
-- To complete this workshop you will need to install QGIS. 
-    - For step by step [installation instructions](https://github.com/DHRI-Curriculum/install/blob/main/sections/qgis.md).
-- Create a free ESRI Online [Public account.](https://doc.arcgis.com/en/arcgis-online/get-started/create-account.htm)
-
-
+- [Download the dataset we will work with by clicking here](https://github.com/DHRI-Curriculum/mapping/tree/v2.0-olivia-edits/dataset).
+- [Look at a version of the map we are going to make in this workshop](http://arcg.is/1KyC9O).
 
 ## Contexts
 
@@ -52,17 +44,11 @@ Software installations
 ### Projects that use these skills
 
 - [Visualizing NEH Open Data](https://digitalfellows.commons.gc.cuny.edu/2017/04/04/visualizing-neh-open-data/)
-
 - [Mapping Occupation](https://gcdi.commons.gc.cuny.edu/mapping-occupation-the-union-army-and-the-meaning-of-reconstruction/)
-
 - [NYC’s Worst Evictors](https://www.worstevictorsnyc.org/map/)
-
 - [Torn Apart/Separados](http://xpmethod.columbia.edu/torn-apart/volume/2/index)
-
 - [Native Land](https://native-land.ca/)
-
 - [COVID Mapping Projects](https://digitalfellows.commons.gc.cuny.edu/2020/11/02/mapping-the-effects-of-covid-19/)
-
 
 ### Ethical Considerations
 Starting from figuring out how to represent a 3D reality on a 2D plane, there are countless subjective decisions that every mapmaker must make, whether they are conscious of it or not. Mapmakers need to decide what data to represent and what to leave out. They also need to decide how to aggregate, categorize, project, combine, and visualize the data. All of these decisions will influence the story that the map tells. Additionally, as a critical tool of Western colonialism and imperialism, maps wield great authority. As mapmakers, it’s essential to be conscious of this history not to reproduce harmful power dynamics through mapmaking. Once something is visualized in the form of a map, it is often understood as a Truth representation of reality. Therefore, mapmakers have an important responsibility to be as honest and transparent as possible. Since the 1980’s, there have been two emerging disciplines in academia--critical cartography and feminist GIS--that have brought to light many of the harmful applications of mapping. Rather than reject mapping, they have made significant contributions to the field of GIS and mapping, such as counter mapping, sketch mapping, participatory mapping, qualitative GIS and 3D body-mapping. The following readings will introduce you to some of the fundamental insights from critical cartography and feminist GIS that you can integrate into your mapping journey. The reading list also includes modern-day counter mapping projects.

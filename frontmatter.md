@@ -78,11 +78,6 @@ Starting from figuring out how to represent a 3D reality on a 2D plane, there ar
 - [Counter Mapping: Zuni Maps](<https://emergencemagazine.org/feature/counter-mapping/>)
     - The indigenous Zuni people describe their mapping project and the ways it challenges Western modes of mapping. 
 
-
-### Cheat Sheet
-
-- Links to any shortcut sheets with explanatory text. Remember that the linked text automatically becomes the title.
-
 ## Acknowledgements
 
 - Current Author: [Olivia Ildefonso](<https://oildefon.medium.com/>)

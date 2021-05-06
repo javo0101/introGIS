@@ -24,7 +24,7 @@ Customize an interactive map.
 
 ## Prerequisites
 
-- [Data Literacies](https://github.com/DHRI-Curriculum/data-literacies) (optional)
+- [Data Literacies](https://github.com/DHRI-Curriculum/data-literacies) (optional) This workshop /_insert here a reason why the data literacies workshop is good to start with_/...
 
 ## Datasets
 

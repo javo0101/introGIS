@@ -10,10 +10,10 @@ Let’s import the file.
 
 1. Select **Add**.
 2. Select **Add Layer from File**. 
-3. Select **Choose File**, and navigate to where you have the file “1 Week of Protests.csv” saved on  your computer. 
+3. Select **Choose File**, and navigate to where you have the file "1 Week of Protests.csv" saved on  your computer. 
 4. Select **Import Layer**.
 
-At this point a box should appear that says “Add CSV Layer” at the top and has information about location, coordinates and addresses. This is the mapping softwares way of asking you if you want to convert the addresses that are stored in the CSV file into points on the map. This process is called “geocoding.” Geocoding will only work if you have addresses or coordinates stored in your CSV file, and luckily we do! If you open the CSV file in a spreadsheet manager, you’ll see that we have the fields “address”, “city”, “state” and “zip”. This is all the geocoder will need to be able to locate the address for each protest and create a map layer of points. 
+At this point a box should appear that says "Add CSV Layer" at the top and has information about location, coordinates and addresses. This is the mapping softwares way of asking you if you want to convert the addresses that are stored in the CSV file into points on the map. This process is called "geocoding." Geocoding will only work if you have addresses or coordinates stored in your CSV file, and luckily we do! If you open the CSV file in a spreadsheet manager, you’ll see that we have the fields "address", "city", "state" and "zip". This is all the geocoder will need to be able to locate the address for each protest and create a map layer of points. 
 
 To geocode the CSV file, the **Field Name** column (pulled from the CSV file) needs to match with the **Location Fields** column (which is the geocoder column). Make sure that the following fields match:
 

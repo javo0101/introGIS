@@ -10,15 +10,15 @@ In this workshop, you will learn to:
 - Consider some of the core ethical dilemmas of mapmaking.
 - Understand the difference between the most popular mapping software. 
 - Import and export data between different mapping tools. 
-- Combine data through performing a “spatial join.” 
-- Turn a spreadsheet with location data into a map layer (the name of this process is “geocoding”).
+- Combine data through performing a "spatial join." 
+- Turn a spreadsheet with location data into a map layer (the name of this process is "geocoding").
 Customize an interactive map.
 - Add pop-ups to your map.
 - Share your interactive map as a URL or embed it in a website.
 
 ---
 
-<p align="center">This workshop is estimated to take you 4 hours. to complete.</p><p align="center"><a href="sections/01-introduction-to-mapping.md">Get Started</a> →</p>
+<p align="center">This workshop is estimated to take you 4 hours to complete.</p><p align="center"><a href="sections/01-introduction-to-mapping.md">Get Started</a> →</p>
 
 ---
 

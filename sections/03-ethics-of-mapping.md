@@ -27,7 +27,7 @@ Important ethical decisions that every mapmaker must consider are:
 - What colors and symbols should I use?
     - Should you represent a population in red or blue? Red normally signals something that is alarming, while blue is a more neutral color. These subjective cartographic design decisions greatly impact viewer’s understanding of the map.
 
-For more guiding questions on ethical decision making, please see [this robust resource](<https://serc.carleton.edu/geoethics/Decision-Making>) put together by “The Community of Earth Educators.”
+For more guiding questions on ethical decision making, please see [this robust resource](<https://serc.carleton.edu/geoethics/Decision-Making>) put together by "The Community of Earth Educators."
 
 ![quote about mapping subjectivities](../images/quote2.png)
 

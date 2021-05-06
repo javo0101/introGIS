@@ -4,10 +4,10 @@
 
 # 11. Changing the Style of the Points Layer
 
-Now you should see a series of points on top of the neighborhood map layer. ArcGIS Online will automatically choose an attribute to use to style the point layer. In my example it chose “Start location.” 
+Now you should see a series of points on top of the neighborhood map layer. ArcGIS Online will automatically choose an attribute to use to style the point layer. In my example it chose "Start location." 
 
 Let’s change the style of the points layer. I’m not really interested in displaying any particular attribute along with the protests. I just want to see the location of the protests. 
-1. Under **Choose an attribute to show**, select “Show location only.”
+1. Under **Choose an attribute to show**, select "Show location only."
 2. Now let’s change the color of the points. In the box that says Location (single symbol) choose **OPTIONS**. 
 3. Select Symbols. 
 4. Feel free to play around with the options for the style of the point. You can change the shape, the fill color, the outline, and the size. You can even upload your own image. For mine, I chose an orange star that’s size 12.

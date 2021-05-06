@@ -20,7 +20,7 @@ What kind of data do we need to make this map?
 - Census data on race by neighborhood
     - Census generated demographic data can be downloaded as a CSV file from the Census website. I’ve already downloaded the spreadsheet and cleaned it up for us so that it only has the variables that we are interested in--GeoName (neighborhood name), GeoID(a unique identifier for each neighborhood), and BINHP (Percent Black). 
 
-To get a better idea of what we will be building together, you can see a final version of the [map here](<http://arcg.is/1KyC9O >).
+To get a better idea of what we will be building together, you can see a final version of the [map here](http://arcg.is/1KyC9O ).
 
 ---
 

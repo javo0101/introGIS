@@ -45,7 +45,7 @@ Here is a quick comparison for some of the mapping software that you can use to 
 
 ![interactive map tool chart comparison](images/toolscomparison2.png)
 
-The only option that is truly free is Leaflet, but it requires familiarity with coding. You can read more about the benefits and limitations of these tools in [this article](<https://digitalfellows.commons.gc.cuny.edu/2019/06/03/finding-the-right-tools-for-mapping/>)
+The only option that is truly free is Leaflet, but it requires familiarity with coding. You can read more about the benefits and limitations of these tools in [this article](https://digitalfellows.commons.gc.cuny.edu/2019/06/03/finding-the-right-tools-for-mapping/)
 
 # Ethics of Mapping
 ![quote about power and mapping](images/quote1.png)
@@ -71,15 +71,15 @@ Important ethical decisions that every mapmaker must consider are:
 - What colors and symbols should I use?
     - Should you represent a population in red or blue? Red normally signals something that is alarming, while blue is a more neutral color. These subjective cartographic design decisions greatly impact viewer’s understanding of the map.
 
-For more guiding questions on ethical decision making, please see [this robust resource](<https://serc.carleton.edu/geoethics/Decision-Making>) put together by "The Community of Earth Educators."
+For more guiding questions on ethical decision making, please see [this robust resource](https://serc.carleton.edu/geoethics/Decision-Making) put together by "The Community of Earth Educators."
 
 ![quote about mapping subjectivities](images/quote2.png)
 
 With all of the subjective decisions that go into mapmaking, those working out the tradition of feminist GIS and critical cartography have stressed the importance of contextualizing one’s map. Maps should not speak for themselves. We should add context that allows the viewer to understand all of the decisions that were made while making the map. This form of transparency will help tell the story that you are trying to communicate. 
 
 For more about the history of mapping, and to learn about current countermapping projects, see these resources:
-- [Manual of Collective Mapping.](<https://www.academia.edu/28625755/Manual_of_Collective_Mapping_Critical_cartographic_resources_for_territorial_processes_of_collaborative_creation_2016_>) Critical cartographic resources for territorial processes of collaborative creation.
-- [Counter Mapping:](<https://emergencemagazine.org/feature/counter-mapping/>) Zuni Maps
+- [Manual of Collective Mapping.](https://www.academia.edu/28625755/Manual_of_Collective_Mapping_Critical_cartographic_resources_for_territorial_processes_of_collaborative_creation_2016_) Critical cartographic resources for territorial processes of collaborative creation.
+- [Counter Mapping:](https://emergencemagazine.org/feature/counter-mapping/) Zuni Maps
 
 
 # Making an Interactive Map Demo: Introduction
@@ -100,7 +100,7 @@ What kind of data do we need to make this map?
 - Census data on race by neighborhood
     - Census generated demographic data can be downloaded as a CSV file from the Census website. I’ve already downloaded the spreadsheet and cleaned it up for us so that it only has the variables that we are interested in--GeoName (neighborhood name), GeoID(a unique identifier for each neighborhood), and BINHP (Percent Black). 
 
-To get a better idea of what we will be building together, you can see a final version of the [map here](<http://arcg.is/1KyC9O >). 
+To get a better idea of what we will be building together, you can see a final version of the [map here](http://arcg.is/1KyC9O ). 
 
 # Combining Data Through a Spatial Join
 ![combining data](images/data.png)
@@ -181,7 +181,7 @@ To check to see if the join was successful, we’ll need to look at the neighbor
 Since our shapefile layer has been updated with new data, lets rename it.
 1. Right click on the shapefile layer in the Layers Panel and select **Rename**. I’m going to rename mine "NYCntaPerBlack." This name will let me know that the data has New York City neighborhood tabulation areas and percent black. 
 
-**Note**: Mapping softwares typically offer two different types of spatial joins--join by attribute and join by location. **Join by attribute** is the type of join what we just did; it’s based on matching two layers based on a shared attribute or variable. **Join by location** is when you have two shapefiles that you want to combine based on where the features are located on the map. For example if you have a map of US states and you want to add information about its cities, you can run a spatial join by location. To learn more about this type of join, check out [this article.](<https://gisgeography.com/spatial-join/>) 
+**Note**: Mapping softwares typically offer two different types of spatial joins--join by attribute and join by location. **Join by attribute** is the type of join what we just did; it’s based on matching two layers based on a shared attribute or variable. **Join by location** is when you have two shapefiles that you want to combine based on where the features are located on the map. For example if you have a map of US states and you want to add information about its cities, you can run a spatial join by location. To learn more about this type of join, check out [this article.](https://gisgeography.com/spatial-join/) 
 
 ## Exporting Data from QGIS
 

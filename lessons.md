@@ -43,7 +43,7 @@ Here is a quick comparison for some of the mapping software that you can use to 
 
 ![Chart that compares interactive map tools](images/toolscomparison2.png)
 
-The only option that is truly free is Leaflet, but it requires familiarity with coding. You can read more about the benefits and limitations of these tools in [this article](https://digitalfellows.commons.gc.cuny.edu/2019/06/03/finding-the-right-tools-for-mapping/).
+The only option that is truly free is Leaflet, but it requires familiarity with coding. You can read more about the benefits and limitations of these tools in the blog post ["Finding the Right Tools for Mapping"](https://digitalfellows.commons.gc.cuny.edu/2019/06/03/finding-the-right-tools-for-mapping/) on the Graduate Center's Digital Fellows blog.
 
 # Ethics of Mapping
 
@@ -65,7 +65,7 @@ Important ethical decisions that every mapmaker must consider are:
 - **What are the implications of aggregating the data at a certain scale?** For example, let's say you are studying the differences between urban and suburban areas. If you aggregate your data at the level of counties, what could be missing from that representation of the data? Is there something that is happening at the level of the neighborhood or town, that could be useful to answer your research question? This is not to say that the smallest scales are always the best to work with, but rather to suggest that when we aggregate data, we need to be aware of what distinctions we are hiding in the process.
 - **What colors and symbols should I use?** Should you represent a population in red or blue? Red normally signals something that is alarming, while blue is a more neutral color. These subjective cartographic design decisions greatly impact viewer's understanding of the map.
 
-For more guiding questions on ethical decision making, please see [this robust resource](https://serc.carleton.edu/geoethics/Decision-Making) put together by "The Community of Earth Educators."
+For more guiding questions on ethical decision making, please see ["Ethical Decision-Making"](https://serc.carleton.edu/geoethics/Decision-Making), a robust resource put together by the "Community of Earth Educators."
 
 ![Quote: "We conceive 'mapping' as a practice, an action of thought in which the map is only one of the tools promoting an approach and deep analysis of social, subjective, and geographic territories." (Dúo Iconoclasistas)](images/quote2.png)
 
@@ -87,7 +87,7 @@ Do Black Lives Matter protests tend to take place more in majority Black neighbo
 What kind of data do we need to make this map?
 
 - **Location of protests.** Since this data didn't exist, I had to create it. I tried to find all of the protests that took place from May 28, 2020 to June 3, 2020. Since this was based on my own ability to capture the data from news articles, I assume that there are protests that happened during that week that are not in my dataset. When I publish my map, it will be important to state this assumption and include the methodology for how this data was collected.
-- **Shapes to represent the neighborhoods.** For NYC neighborhoods we can download a shapefile (which is a form of spatial data) from NYC Open Data. The file can be downloaded here. Click on "Export" and select "Shapefile".  A compressed folder will download. Move the folder out of your downloads and into a folder on your computer were you will be keeping all of the data for this workshop. When you open the folder you will notice there are four different files in there that all have the same name, yet are a different file type. In order for a shapefile to work, all of this data needs to stay together. Please compress the folder, so that the entire folder can be uploaded into our mapping software when we are ready to use it.
+- **Shapes to represent the neighborhoods.** For NYC neighborhoods we can download a shapefile (which is a form of spatial data) from NYC Open Data. The file can be downloaded here. Click on "Export" and select "Shapefile".  A compressed folder will download. Move the folder out of your downloads and into a folder on your computer were you will be keeping all of the data for this workshop. When you open the folder you will notice there are four different files in there that all have the same name, yet are a different file type. In order for a shapefile to work, all of this data needs to stay together. Please compress the folder, so that the entire folder can be uploaded into our mapping software when we are ready to use it.<!-- TODO: First time shapefile is mentioned, should be added to glossary -->
 - **Census data on race by neighborhood.** Census generated demographic data can be downloaded as a CSV file from the Census website. I've already downloaded the spreadsheet and cleaned it up for us so that it only has the variables that we are interested in—`GeoName` (neighborhood name), `GeoID` (a unique identifier for each neighborhood), and `BINHP` (Percent Black).
 
 To get a better idea of what we will be building together, you can take a look at a final version of the [Location of BLM Protests Map](http://arcg.is/1KyC9O).
@@ -156,14 +156,15 @@ A spatial join won't work unless the fields are the same type—integer, double,
 
 Now we are ready for our spatial join!
 
-In the layers panel, double click on the shapefile layer, "Neighborhood Tabulation Area".Then click on **Joins** and click on the **green plus sign**. A new box will pop up. This is where you will configure your spatial join.
-    - The **Join layer** should be `racebyneighborhood` since that is the map layer you are joining to the neighborhood shapefile.
-    - The **Join field** should be `GeoID`.
-    - The **Target field** should be `ntacode`.
-    - Note: `GeoID` and `nta code` are the two variables that match from the two mapping layers. This is why we are using them here as the **Join field** and **Target field**.
-    - Where it says **Custom Field Name Prefix** you can click the checkbox and change the prefix. This prefix will be added to the variable name of every join layer. You can change it to something shorter or you can simply delete the text so no prefix is added. I'm going to delete mine.
-    - Lastly, click **OK** to save the configuration of the spatial join.
-    - To run the join, click **OK**.
+1. In the layers panel, double click on the shapefile layer, "Neighborhood Tabulation Area".Then click on **Joins** and click on the **green plus sign**. A new dialog will appear on the screen. This is where you will configure your spatial join.
+2. Select `racebyneighborhood` for the **Join layer** option since that is the map layer you are joining to the neighborhood shapefile.
+3. Select `GeoID` for the **Join field** option.
+4. The **Target field** should be `ntacode`.
+5. Where it says **Custom Field Name Prefix**, you can click the checkbox and change the prefix. This prefix will be added to the variable name of every join layer. You can change it to something shorter or you can simply delete the text so no prefix is added. I'm going to delete mine.
+6. Lastly, click **OK** to save the configuration of the spatial join.
+7. To run the join, click **OK** in the following dialog.
+
+_Note: `GeoID` and `nta code` are the two variables that match from the two mapping layers. This is why we are using them in step 3 and 4 above as the **Join field** and **Target field**._
 
 ![Screenshot detailing the steps in this section to perform a "spatial join"](images/joins.png)
 

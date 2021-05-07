@@ -47,7 +47,7 @@ The only option that is truly free is Leaflet, but it requires familiarity with 
 
 # Ethics of Mapping
 
-<!-- Todo: perhaps split up this section, using subheaders into 2-3 subsections. The way it reads now feels a bit overpowering -->
+<!-- TODO #12: perhaps split up this section, using subheaders into 2-3 subsections. The way it reads now feels a bit overpowering -->
 
 ![Quote: "Maps are embedded within power relations and mediate those relations through spatial representations — Pavlovskaya, M.E. (2006)"](images/quote1.png)
 

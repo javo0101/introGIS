@@ -4,15 +4,15 @@
 
 # 9. Changing the Map Style
 
-Let's change the attribute so that it shows the percent Black population of New York City's neighborhoods.
+Let's change the attribute so that colors instead represent the percentage of Black population in New York City's neighborhoods.
 
 1. Under **Choose an attribute to show**, select `BINHP` which stands for Black Non-Hispanic Population.
-2. Click around with the Drawing Styles to see which you think works best. I would suggest using the first option, a choropleth map style that shows the value by the intensity of the color.<!-- todo: new term for the glossary: cloropleth -->
+2. Click around with the Drawing Styles to see which you think works best. I would suggest using the first option, a choropleth map style that shows the value by the intensity of the color.<!-- TODO: new term for the glossary: cloropleth -->
 
 Let's change the color to something that makes sense.
 
 1. In the **Counts and Amounts** (Color) box click **Options**.
-2. Click **Symbols**, and change the color. I'm selecting the black/white color ramp since I think it fits in with the story I'm trying to tell.
+2. Click **Symbols**, and change the color. I'm selecting the black/white color ramp since I think it fits in with the story I'm trying to tell.<!-- TODO: Should we add "color ramp" as a glossary term? -->
 3. Once you've chosen your color ramp, click **OK**.
 4. Optional: You can click on **Classify** if you want to change how the data is visualized and how many categories are created. "Natural breaks" is a good option because it increases variability between classes while decreasing it within classes.
 5. Click the **OK** button at the bottom of the Layers Panel.

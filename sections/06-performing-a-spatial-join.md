@@ -16,17 +16,19 @@ First, go ahead and open QGIS. When you open the application, you'll see an inte
 
 Let's add our data that needs to be joined. Follow the steps below to help you through the process.
 
-1. To add our CSV of demographic data, `racebyneighborhood.csv`, open the **Data Source Manager**—this button is located in the top left corner of the interface and looks like three pieces of colored paper stacked on top of each other.<!-- todo: add link to csv from glossary -->
+1. To add our CSV of demographic data, `racebyneighborhood.csv`, open the **Data Source Manager**—this button is located in the top left corner of the interface and looks like three pieces of colored paper stacked on top of each other.<!-- TODO: add link to csv from glossary -->
 2. When the Data Source Manager is open, select the **Delimited Text** option.
 3. On the right side of the **File name** section, click on the three dots to locate the file. Then click **Add**.
 
 ![Screenshot of QGIS's data source manager](../images/datasourcemanager.png)
 
-You should now see the file appear in your Layers panel. You'll also see that nothing happens in your map display panel; this is because a CSV file is not mappable. That's why we need to combine it with our shapefile of vector data.
+You should now see the file appear in your Layers panel. You'll also see that nothing happens in your map display panel; this is because a CSV file is not mappable. That's why we need to combine it with our shapefile of vector data.<!-- A little unclear with what it means here that a "CSV file is not mappable" - if it has lat-long coordinates in two separate (or even a single) column, you'd be able to map it, no? -->
 
 ## Adding Vector Data from Our Shapefile to QGIS
 
-Now let's add our shapefile of NYC:
+Now let's add our shapefile of New York City:
+
+<!-- TODO: Add a screenshot here perhaps? -->
 
 1. Go back to the **Data Source Manager** and this time select **Vector**.
 2. Under **Source type**, the "file" option should be selected.
@@ -36,17 +38,17 @@ Now you should see that the file shows up in your Layers Panel, and it also disp
 
 ## Inspecting the Attribute Table
 
-Let's look at the data in the attribute table to see what we're working with. Each file has its own attribute table, so let's look at them one at a time.  To do so, right-click on the `racebyneighborhood.csv` file and select "Open attribute table." _If you see the three variables—`GeoName`, `GeoID`, and `BINHP`—then we're good to go!_
+Let's look at the data in the attribute table to see what we're working with. Each file has its own attribute table, so let's look at them one at a time. To do so, right-click on the `racebyneighborhood.csv` file and select "Open attribute table." _If you see the three variables—`GeoName`, `GeoID`, and `BINHP`—then we're good to go!_
 
 Let's open the attribute table for the "Neighborhood Tabulation Area" shapefile. Right-click on that layer and select "Open attribute table."
 
-<!-- todo: add a screenshot here perhaps of what the attribute table looks like? -->
+<!-- TODO: Add a screenshot here perhaps of what the attribute table looks like? -->
 
 In the table, you will see the variables: `boro_code` (borough code), `boro_name` (borough name), `county_fip` (the unique identifier for each county), `ntacode` (the unique identifier for each neighborhood), `ntaname` (neighborhood name), `shape_area` (surface area of each neighborhood in decimal degrees) and `shape_leng` (the length of the perimeter of each neighborhood in decimal degrees).
 
 You will notice that both files have a variable in common—the `ntacode` in the shapefile is the same as the `GeoID` in the CSV file. These two variables will serve as our keys that will be used to match and join the files together.
 
-A spatial join won't work unless the fields are the same type—integer, double, string, etc. To see the field type, double-click on each layer and navigate to the "Fields" tab. The `ntacode` and the `GeoID` are both string variables, so we are all set for our join.<!-- todo: add link to data type from glossary -->
+A spatial join won't work unless the fields are the same type—integer, double, string, etc. To see the field type, double-click on each layer and navigate to the "Fields" tab. The `ntacode` and the `GeoID` are both string variables, so we are all set for our join.<!-- TODO: add link to data type from glossary -->
 
 ## Performing a Spatial Join
 

@@ -21,8 +21,8 @@ Here, you can decide which attributes to display by clicking the checkboxes unde
 
 1. In the **Display** column select "Start Location" and "Details." Even though we also want to add "photo" we are not going to check that off here. Media needs to be configured through a different process, which we'll do next.
 2. You don't have to change anything in the **Edit** column.
-3. Under Field Alias click on the word "Details" and change it to "Protest info."
-4. Click OK.
+3. Under Field Alias click on the word **Details** and change it to "Protest info."
+4. Click **OK**.
 
 Now let's add our photo to the pop-up. Under **Pop-up Media** select **Add < Image**. You should see the following dialog:
 

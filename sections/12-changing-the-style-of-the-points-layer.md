@@ -10,7 +10,7 @@ Let's change the style of the points layer. I'm not really interested in display
 
 1. Under **Choose an attribute to show**, select "Show location only."
 2. Now let's change the color of the points. In the box that says Location (single symbol) choose **OPTIONS**.
-3. Select Symbols.
+3. Select **Symbols**.
 4. Feel free to play around with the options for the style of the point. You can change the shape, the fill color, the outline, and the size. You can even upload your own image. For mine, I chose an orange star that's size 12.
 5. Select **OK**.
 6. And select **OK** again.

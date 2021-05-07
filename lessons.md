@@ -116,7 +116,7 @@ Since we now have the concepts for what a spatial join means, we can move on to 
 
 # Performing a Spatial Join
 
-We will use QGIS which is a free and open source mapping software that will allow us to do pretty much any spatial operation that you could ever want! If you haven't yet installed QGIS you can do so by following these installation instructions **add link**.<!-- TODO #12: add link to instructions here + build a file for it... -->
+We will use QGIS which is a free and open source mapping software that will allow us to do pretty much any spatial operation that you could ever want! If you haven't yet installed QGIS you can do so by following these installation instructions **add link**.<!-- TODO #12: build a file for installation instructions for QGIS + add link here... -->
 
 ## Open QGIS
 

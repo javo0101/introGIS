@@ -25,7 +25,7 @@ Customize an interactive map.
 ## Prerequisites
 
 - [Data Literacies](https://github.com/DHRI-Curriculum/data-literacies) (optional) This workshop /_insert here a reason why the data literacies workshop is good to start with_/...To complete this workshop you will need to install QGIS. Step by step installation instructions are available here.
-- [QGIS](https://github.com/DHRI-Curriculum/install/blob/main/sections/qgis.md) (required) 
+- [Install QGIS](https://github.com/DHRI-Curriculum/install/blob/main/sections/qgis.md) (required) 
 - [Create an ESRI Online Public account](https://doc.arcgis.com/en/arcgis-online/get-started/create-account.htm) You will also need to create a free account for ESRI Online to participate in this workshop.
 
 ## Datasets

@@ -1,8 +1,8 @@
-← [Formatting the Legend](13-formatting-the-legend.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Start](../README.md) ↺
+← [Formatting the Legend](14-formatting-the-legend.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Start](../README.md) ↺
 
 ---
 
-# 14. Saving and Sharing Your Map
+# 15. Saving and Sharing Your Map
 
 Now it's finally time to save and share your map!
 
@@ -16,4 +16,4 @@ Congratulations! You've made an informative and interactive map with two layers 
 
 ---
 
-← [Formatting the Legend](13-formatting-the-legend.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Start](../README.md) ↺
+← [Formatting the Legend](14-formatting-the-legend.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Start](../README.md) ↺

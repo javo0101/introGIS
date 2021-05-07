@@ -12,7 +12,7 @@ In this map of the United States we see three basic shapes—the cities are repr
 
 ## Sidebar: Raster Data
 
-There is another important type of data that we will not be using in this workshop, but you should be aware of. It's called "raster data." Raster data is an image, such as a satellite image, with "geolocations"—which just means location data. It's beneficial to store geographic data as raster data when you are working with continuous data, such as heat or elevation.
+There is another important type of data that we will not be using in this workshop, but you should be aware of. It's called "raster data." Raster data is an image, such as a satellite image, with "geolocations"—which just means location data. It's beneficial to store geographic data as raster data when you are working with continuous data, such as heat or elevation.<!-- TODO: add "raster data" to glossary -->
 
 ![An example of a Polygon Map](../images/polygonsmap.png)
 

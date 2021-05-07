@@ -1,8 +1,8 @@
-← [Importing CSV file and Geocoding Addresses](10-importing-csv-file-and-geocoding-addresses.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Formatting the Pop-ups for the Protest Locations](12-formatting-the-pop-ups-for-the-protest-locations.md) →
+← [Importing CSV file and Geocoding Addresses](11-importing-csv-file-and-geocoding-addresses.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Formatting the Pop-ups for the Protest Locations](13-formatting-the-pop-ups-for-the-protest-locations.md) →
 
 ---
 
-# 11. Changing the Style of the Points Layer
+# 12. Changing the Style of the Points Layer
 
 Now you should see a series of points on top of the neighborhood map layer. ArcGIS Online will automatically use an attribute to style the point layer. In my example, it automatically chose "Start location."
 
@@ -22,4 +22,4 @@ With this map, we should already be able to answer our research question. We wan
 
 ---
 
-← [Importing CSV file and Geocoding Addresses](10-importing-csv-file-and-geocoding-addresses.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Formatting the Pop-ups for the Protest Locations](12-formatting-the-pop-ups-for-the-protest-locations.md) →
+← [Importing CSV file and Geocoding Addresses](11-importing-csv-file-and-geocoding-addresses.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Formatting the Pop-ups for the Protest Locations](13-formatting-the-pop-ups-for-the-protest-locations.md) →

@@ -1,8 +1,8 @@
-← [Configuring the Pop-up](09-configuring-the-pop-up.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Changing the Style of the Points Layer](11-changing-the-style-of-the-points-layer.md) →
+← [Configuring the Pop-up](10-configuring-the-pop-up.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Changing the Style of the Points Layer](12-changing-the-style-of-the-points-layer.md) →
 
 ---
 
-# 10. Importing CSV file and Geocoding Addresses
+# 11. Importing CSV file and Geocoding Addresses
 
 Now we're ready to import our next mapping layer. This one will be the CSV file that we have of several BLM protests that took place during one week in June. We want to layer this data as points on our choropleth map in order to see if the protests tended to take place in neighborhoods that were majority Black, or not.
 
@@ -28,10 +28,10 @@ To geocode the CSV file, the **Field Name** column (pulled from the CSV file) ne
 
 If they don't match, then click on the cell(s) to change it. Most likely, since the mapping software is pretty good at this stuff, they will all be automatically matched, so you won't have to change anything. Finally, click **Add Layer**.
 
-## Note on geocoding limits
+## Note on Geocoding Limits
 
 Note: ArcGIS will only geocode up to 100 entries. If you have more than 100, you can use the Census Geocoder which allows you to geocode up to 1000 entries.
 
 ---
 
-← [Configuring the Pop-up](09-configuring-the-pop-up.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Changing the Style of the Points Layer](11-changing-the-style-of-the-points-layer.md) →
+← [Configuring the Pop-up](10-configuring-the-pop-up.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Changing the Style of the Points Layer](12-changing-the-style-of-the-points-layer.md) →

@@ -1,8 +1,8 @@
-← [Formatting the Pop-ups for the Protest Locations](12-formatting-the-pop-ups-for-the-protest-locations.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Saving and Sharing Your Map](14-saving-and-sharing-your-map.md) →
+← [Formatting the Pop-ups for the Protest Locations](13-formatting-the-pop-ups-for-the-protest-locations.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Saving and Sharing Your Map](15-saving-and-sharing-your-map.md) →
 
 ---
 
-# 13. Formatting the Legend
+# 14. Formatting the Legend
 
 <!-- TODO: We need a short intro to what the legend is here, I think -->
 
@@ -18,4 +18,4 @@ Let's have a quick look at the legend to make sure that it will be informative f
 
 ---
 
-← [Formatting the Pop-ups for the Protest Locations](12-formatting-the-pop-ups-for-the-protest-locations.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Saving and Sharing Your Map](14-saving-and-sharing-your-map.md) →
+← [Formatting the Pop-ups for the Protest Locations](13-formatting-the-pop-ups-for-the-protest-locations.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Saving and Sharing Your Map](15-saving-and-sharing-your-map.md) →

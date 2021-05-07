@@ -1,14 +1,14 @@
-← [Changing the Map Style](08-changing-the-map-style.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing CSV file and Geocoding Addresses](10-importing-csv-file-and-geocoding-addresses.md) →
+← [Changing the Map Style](09-changing-the-map-style.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing CSV file and Geocoding Addresses](11-importing-csv-file-and-geocoding-addresses.md) →
 
 ---
 
-# 9. Configuring the Pop-up
+# 10. Configuring the Pop-up
 
 If you click on your map, you'll see a pop-up window with all of the information contained in the attribute table.
 
 ![Screenshot that shows what the automatic pop-up window looks like in ArcGIS Online](../images/uglypopup1.png)
 
-As you'll see, the pop-up doesn't look very nice. The names won't make much sense to the map viewer, and the viewer probably wouldn't be interested in some of the information, like the `nta code`.
+As you'll see, the pop-up doesn't look very nice. The names won't make much sense to the map viewer, and the viewer probably wouldn't be interested in some of the information, like the `ntacode`.
 
 Let's configure our pop-up so that it looks better and provides better information.
 
@@ -31,4 +31,4 @@ Now when you click on the map you should see a popup with just the name of the n
 
 ---
 
-← [Changing the Map Style](08-changing-the-map-style.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing CSV file and Geocoding Addresses](10-importing-csv-file-and-geocoding-addresses.md) →
+← [Changing the Map Style](09-changing-the-map-style.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing CSV file and Geocoding Addresses](11-importing-csv-file-and-geocoding-addresses.md) →

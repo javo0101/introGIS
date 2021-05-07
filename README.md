@@ -30,14 +30,15 @@ Customize an interactive map.
 4. [Making an Interactive Map: Introduction](sections/04-making-an-interactive-map-introduction.md)
 5. [Combining Data Through a Spatial Join](sections/05-combining-data-through-a-spatial-join.md)
 6. [Performing a Spatial Join](sections/06-performing-a-spatial-join.md)
-7. [Importing data to ArcGIS Online](sections/07-importing-data-to-arcgis-online.md)
-8. [Changing the Map Style](sections/08-changing-the-map-style.md)
-9. [Configuring the Pop-up](sections/09-configuring-the-pop-up.md)
-10. [Importing CSV file and Geocoding Addresses](sections/10-importing-csv-file-and-geocoding-addresses.md)
-11. [Changing the Style of the Points Layer](sections/11-changing-the-style-of-the-points-layer.md)
-12. [Formatting the Pop-ups for the Protest Locations](sections/12-formatting-the-pop-ups-for-the-protest-locations.md)
-13. [Formatting the Legend](sections/13-formatting-the-legend.md)
-14. [Saving and Sharing Your Map](sections/14-saving-and-sharing-your-map.md)
+7. [Exporting Data from QGIS](sections/07-exporting-data-from-qgis.md)
+8. [Importing Data to ArcGIS Online](sections/08-importing-data-to-arcgis-online.md)
+9. [Changing the Map Style](sections/09-changing-the-map-style.md)
+10. [Configuring the Pop-up](sections/10-configuring-the-pop-up.md)
+11. [Importing CSV file and Geocoding Addresses](sections/11-importing-csv-file-and-geocoding-addresses.md)
+12. [Changing the Style of the Points Layer](sections/12-changing-the-style-of-the-points-layer.md)
+13. [Formatting the Pop-ups for the Protest Locations](sections/13-formatting-the-pop-ups-for-the-protest-locations.md)
+14. [Formatting the Legend](sections/14-formatting-the-legend.md)
+15. [Saving and Sharing Your Map](sections/15-saving-and-sharing-your-map.md)
 
 ---
 

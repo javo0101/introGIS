@@ -8,7 +8,7 @@ In this map of the United States we see three basic shapes—the cities are repr
 
 ## Features and Attributes
 
-Another mapping concept that's important to know is that the visualizations that are displayed on the map are called the map's "features" and the data that's connected to those shapes are called the maps "attributes." Attribute data is stored in an attribute table, which is a lot like spreadsheet. One feature on the map can contain many attributes—the feature for the state of Florida has the attributes `STATEFP` (the state ID), `STUSPS` (the state abbreviation), `NAME` (the state name), etc. Any type of data that you have at the scale of the state can be put in this attribute table. The attribute table stores all of the data and then you decide what data you want to visualize.<!-- TODO #12: add these to the glossary -->
+Another mapping concept that's important to know is that the visualizations that are displayed on the map are called the map's "features" and the data that's connected to those shapes are called the maps "attributes." Attribute data is stored in an attribute table, which is a lot like spreadsheet. One feature on the map can contain many attributes—the feature for the state of Florida has the attributes `STATEFP` (the state ID), `STUSPS` (the state abbreviation), `NAME` (the state name), etc. Any type of data that you have at the scale of the state can be put in this attribute table. The attribute table stores all of the data and then you decide what data you want to visualize.<!-- TODO #12: add feature and attribute to the glossary -->
 
 ![Screenshot explaining the concepts features and attributes in mapping](images/featuresattributes.png)
 
@@ -93,7 +93,7 @@ Do Black Lives Matter protests tend to take place more in majority Black neighbo
 What kind of data do we need to make this map?
 
 - **Location of protests.** Since this data didn't exist, I had to create it. I tried to find all of the protests that took place from May 28, 2020 to June 3, 2020. Since this was based on my own ability to capture the data from news articles, I assume that there are protests that happened during that week that are not in my dataset. When I publish my map, it will be important to state this assumption and include the methodology for how this data was collected.
-- **Shapes to represent the neighborhoods.** For NYC neighborhoods we can download a shapefile (which is a form of spatial data) from NYC Open Data. The file can be downloaded here.<!-- TODO #12: add a link here? --> Click on "Export" and select "Shapefile". A compressed folder will download. Move the folder out of your downloads and into a folder on your computer were you will be keeping all of the data for this workshop. When you open the folder you will notice there are four different files in there that all have the same name, yet are a different file type. In order for a shapefile to work, all of this data needs to stay together. Please compress the folder, so that the entire folder can be uploaded into our mapping software when we are ready to use it.<!-- TODO #12: First time shapefile is mentioned, should be added to glossary -->
+- **Shapes to represent the neighborhoods.** For NYC neighborhoods we can download a shapefile (which is a form of spatial data) from NYC Open Data. The file can be downloaded here.<!-- TODO #12: add a link to shapefile from NYC Open Data? --> Click on "Export" and select "Shapefile". A compressed folder will download. Move the folder out of your downloads and into a folder on your computer were you will be keeping all of the data for this workshop. When you open the folder you will notice there are four different files in there that all have the same name, yet are a different file type. In order for a shapefile to work, all of this data needs to stay together. Please compress the folder, so that the entire folder can be uploaded into our mapping software when we are ready to use it.<!-- TODO #12: First time shapefile is mentioned, should be added to glossary -->
 - **Census data on race by neighborhood.** Census generated demographic data can be downloaded as a CSV file from the Census website. I've already downloaded the spreadsheet and cleaned it up for us so that it only has the variables that we are interested in—`GeoName` (neighborhood name), `GeoID` (a unique identifier for each neighborhood), and `BINHP` (Percent Black).<!-- TODO #12: what does it mean that you have downloaded the spreadsheet here? Is it one of the datasets in the frontmatter? If so, perhaps we should link to it here. -->
 
 ## Preview the Result
@@ -128,7 +128,7 @@ First, go ahead and open QGIS. When you open the application, you'll see an inte
 
 Let's add our data that needs to be joined. Follow the steps below to help you through the process.
 
-1. To add our CSV of demographic data, `racebyneighborhood.csv`, open the **Data Source Manager**—this button is located in the top left corner of the interface and looks like three pieces of colored paper stacked on top of each other.<!-- TODO #12: add link to csv from glossary -->
+1. To add our CSV of demographic data, `racebyneighborhood.csv`, open the **Data Source Manager**—this button is located in the top left corner of the interface and looks like three pieces of colored paper stacked on top of each other.<!-- TODO #12: add link to "CSV" from glossary -->
 2. When the Data Source Manager is open, select the **Delimited Text** option.
 3. On the right side of the **File name** section, click on the three dots to locate the file. Then click **Add**.
 
@@ -140,7 +140,7 @@ You should now see the file appear in your Layers panel. You'll also see that no
 
 Now let's add our shapefile of New York City:
 
-<!-- TODO #12: Add a screenshot here perhaps? -->
+<!-- TODO #12: Add a screenshot of what the shapefile adding to QGIS looks like perhaps? -->
 
 1. Go back to the **Data Source Manager** and this time select **Vector**.
 2. Under **Source type**, the "file" option should be selected.

@@ -8,7 +8,7 @@ In this map of the United States we see three basic shapes—the cities are repr
 
 ## Sidebar: Raster Data
 
-There is another important type of data that we will not be using in this workshop, but you should be aware of. It's called "raster data." Raster data is an image, such as a satellite image, with "geolocations"—which just means location data. It's beneficial to store geographic data as raster data when you are working with continuous data, such as heat or elevation.
+There is another important type of data that we will not be using in this workshop, but you should be aware of. It's called "raster data." Raster data is an image, such as a satellite image, with "geolocations"—which just means location data. It's beneficial to store geographic data as raster data when you are working with continuous data, such as heat or elevation.<!-- TODO: add "raster data" to glossary -->
 
 ![An example of a Polygon Map](images/polygonsmap.png)
 
@@ -78,6 +78,8 @@ For more about the history of mapping, and to learn about current countermapping
 
 # Making an Interactive Map: Introduction
 
+<!-- An introductory short paragraph would be nice here, which would also provide context for why we should have a research question and what it means for the "mapping" process (which also lends itself to a good tranition from the previous lesson into this one) -->
+
 ## Research Question
 
 Do Black Lives Matter protests tend to take place more in majority Black neighborhoods, perhaps as a tactic to build solidarity, or in majority non-Black, perhaps as a tactic to raise awareness?
@@ -88,7 +90,7 @@ What kind of data do we need to make this map?
 
 - **Location of protests.** Since this data didn't exist, I had to create it. I tried to find all of the protests that took place from May 28, 2020 to June 3, 2020. Since this was based on my own ability to capture the data from news articles, I assume that there are protests that happened during that week that are not in my dataset. When I publish my map, it will be important to state this assumption and include the methodology for how this data was collected.
 - **Shapes to represent the neighborhoods.** For NYC neighborhoods we can download a shapefile (which is a form of spatial data) from NYC Open Data. The file can be downloaded here. Click on "Export" and select "Shapefile".  A compressed folder will download. Move the folder out of your downloads and into a folder on your computer were you will be keeping all of the data for this workshop. When you open the folder you will notice there are four different files in there that all have the same name, yet are a different file type. In order for a shapefile to work, all of this data needs to stay together. Please compress the folder, so that the entire folder can be uploaded into our mapping software when we are ready to use it.<!-- TODO: First time shapefile is mentioned, should be added to glossary -->
-- **Census data on race by neighborhood.** Census generated demographic data can be downloaded as a CSV file from the Census website. I've already downloaded the spreadsheet and cleaned it up for us so that it only has the variables that we are interested in—`GeoName` (neighborhood name), `GeoID` (a unique identifier for each neighborhood), and `BINHP` (Percent Black).
+- **Census data on race by neighborhood.** Census generated demographic data can be downloaded as a CSV file from the Census website. I've already downloaded the spreadsheet and cleaned it up for us so that it only has the variables that we are interested in—`GeoName` (neighborhood name), `GeoID` (a unique identifier for each neighborhood), and `BINHP` (Percent Black).<!-- TODO: what does it mean that you have downloaded the spreadsheet here? Is it one of the datasets in the frontmatter? If so, perhaps we should link to it here. -->
 
 To get a better idea of what we will be building together, you can take a look at a final version of the [Location of BLM Protests Map](http://arcg.is/1KyC9O).
 
@@ -96,57 +98,57 @@ To get a better idea of what we will be building together, you can take a look a
 
 ![Image detailing the process of combining data in a "spatial join"](images/data.png)
 
-When we think about how the data will be visualized in the map, we will be turning the location of the protests into a layer of points. And we will be stacking the point layer on top of a polygon layer, which are the neighborhoods. Since our neighborhood data—the features stored in the Shapefile and the CSV with the data on race—are in two separate files, we'll need to perform a "spatial join" to combine them into one file.
+When we think about how the data will be visualized in the map, we will be turning the location of the protests into a layer of points. And we will be stacking the point layer on top of a polygon layer, which are the neighborhoods. Since our neighborhood data—the features stored in the shapefile and the CSV with the data on race—are in two separate files, we'll need to perform a "spatial join" to combine them into one file.<!-- TODO: explain what is a polygon layer and add "polygon layer" to glossary -->
 
 ## What's a "Spatial Join"?
 
-Well, I'm glad you asked because a spatial join is one of the most common GIS operations! Since most of the data that we work with do not have coordinates attached to it (e.g. Census data), a spatial join is a way to connect data without mappable coordinates to features with mappable coordinates.
+Well, I'm glad you asked because a spatial join is one of the most common GIS operations! Since most of the data that we work with do not have coordinates attached to it (e.g. Census data), a spatial join is a way to connect data without mappable coordinates to features with mappable coordinates.<!-- TODO: do we need to clarify what mappable coordinates are, i.e. I presume lat/long? -->
 
-In order to do this both files need to be the same resolution (e.g. NYC neighborhood) and they need to have a column of the same unique identifiers—this will serve as a key to match the two data files. When you work with data from the government, such at Census data, each geographical unit (e.g. each different neighborhood) will be given a unique identifier, so if both your data and your shapefile are from the government then the unique identifiers will match.
+In order to do this both files need to be the same resolution (e.g. NYC neighborhood) and they need to have a column of the same unique identifiers—this will serve as a key to match the two data files. When you work with data from the government, such at Census data, each geographical unit (e.g. each different neighborhood) will be given a unique identifier, so if both your data and your shapefile are from the government then the unique identifiers will match.<!-- TODO: add an explanation here of what "resolution" means + add "resolution" to glossary? -->
 
-## What will we use to do the Spatial Join?
-
-We will use QGIS which is a free and open source mapping software that will allow us to do pretty much any spatial operation that you could ever want! If you haven't yet installed QGIS you can do so by following these installation instructions **add link**.<!-- TODO: add link + instructions here... -->
+Since we now have the concepts for what a spatial join means, we can move on to performing the spatial join on our data.
 
 # Performing a Spatial Join
 
+We will use QGIS which is a free and open source mapping software that will allow us to do pretty much any spatial operation that you could ever want! If you haven't yet installed QGIS you can do so by following these installation instructions **add link**.<!-- TODO: add link to instructions here + build a file for it... -->
+
 ## Open QGIS
 
-First, open QGIS. When you open the application, you'll see an interface that looks like this:
+First, go ahead and open QGIS. When you open the application, you'll see an interface that looks like this:
 
 ![Screenshot overviewing QGIS's interface](images/qgisinterface.png)
 
-## Adding data to QGIS
+## Adding Demographic Data to QGIS
 
 Let's add our data that needs to be joined. Follow the steps below to help you through the process.
 
-1. To add our CSV of demographic data, `racebyneighborhood.csv`, open the **Data Source Manager**—this button is located in the top left and looks like three pieces of colored paper stacked on top of each other.<!-- todo: add link to csv from glossary -->
-
+1. To add our CSV of demographic data, `racebyneighborhood.csv`, open the **Data Source Manager**—this button is located in the top left corner of the interface and looks like three pieces of colored paper stacked on top of each other.<!-- todo: add link to csv from glossary -->
 2. When the Data Source Manager is open, select the **Delimited Text** option.
-
 3. On the right side of the **File name** section, click on the three dots to locate the file. Then click **Add**.
 
 ![Screenshot of QGIS's data source manager](images/datasourcemanager.png)
 
 You should now see the file appear in your Layers panel. You'll also see that nothing happens in your map display panel; this is because a CSV file is not mappable. That's why we need to combine it with our shapefile of vector data.
 
+## Adding Vector Data from Our Shapefile to QGIS
+
 Now let's add our shapefile of NYC:
 
 1. Go back to the **Data Source Manager** and this time select **Vector**.
-
 2. Under **Source type**, the "file" option should be selected.
-
 3. Where it says **Vector datasets**, use the browse feature again to find the shapefile on your computer and click **Add**.
 
 Now you should see that the file shows up in your Layers Panel, and it also displays as a map layer on your display panel.
 
-## Looking at the Attribute Table
+## Inspecting the Attribute Table
 
 Let's look at the data in the attribute table to see what we're working with. Each file has its own attribute table, so let's look at them one at a time.  To do so, right-click on the `racebyneighborhood.csv` file and select "Open attribute table." _If you see the three variables—`GeoName`, `GeoID`, and `BINHP`—then we're good to go!_
 
 Let's open the attribute table for the "Neighborhood Tabulation Area" shapefile. Right-click on that layer and select "Open attribute table."
 
-In the table, you will see the variables: `boro_code` (borough code), `boro_name` (borough name), `county_fip` (the county unique identifier), `ntacode` (the unique identifier for each neighborhood), `ntaname` (neighborhood name), `shape_area` (surface area of each neighborhood in decimal degrees) and `shape_leng` (the length of the perimeter of each neighborhood in decimal degrees).
+<!-- todo: add a screenshot here perhaps of what the attribute table looks like? -->
+
+In the table, you will see the variables: `boro_code` (borough code), `boro_name` (borough name), `county_fip` (the unique identifier for each county), `ntacode` (the unique identifier for each neighborhood), `ntaname` (neighborhood name), `shape_area` (surface area of each neighborhood in decimal degrees) and `shape_leng` (the length of the perimeter of each neighborhood in decimal degrees).
 
 You will notice that both files have a variable in common—the `ntacode` in the shapefile is the same as the `GeoID` in the CSV file. These two variables will serve as our keys that will be used to match and join the files together.
 
@@ -164,7 +166,7 @@ Now we are ready for our spatial join!
 6. Lastly, click **OK** to save the configuration of the spatial join.
 7. To run the join, click **OK** in the following dialog.
 
-_Note: `GeoID` and `nta code` are the two variables that match from the two mapping layers. This is why we are using them in step 3 and 4 above as the **Join field** and **Target field**._
+_Note: `GeoID` and `ntacode` are the two variables that match from the two mapping layers. This is why we are using them in step 3 and 4 above as the **Join field** and **Target field**._
 
 ![Screenshot detailing the steps in this section to perform a "spatial join"](images/joins.png)
 
@@ -174,16 +176,25 @@ Right-click on the shapefile layer and select **Open attribute table**. If you s
 
 Since our shapefile layer has been updated with new data, lets rename it. To do so, right-click on the shapefile layer in the Layers Panel and select **Rename**. I'm going to rename mine `NYCntaPerBlack`. This name will let me know that the data has New York City neighborhood tabulation areas and percent black.
 
-**Note**: Mapping softwares typically offer two different types of spatial joins—join by attribute and join by location. **Join by attribute** is the type of join what we just did; it’s based on matching two layers based on a shared attribute or variable. **Join by location** is when you have two shapefiles that you want to combine based on where the features are located on the map. For example if you have a map of US states and you want to add information about its cities, you can run a spatial join by location. To learn more about this type of join, check out [How Spatial Join Works in GIS by GIS Geography](https://gisgeography.com/spatial-join/).
+## Note: Two Different Types of Spatial Joins
 
-## Exporting Data from QGIS
+Mapping softwares typically offer two different types of spatial joins—join by attribute and join by location.
+
+- **Join by attribute** is the type of join what we just did; it’s based on matching two layers based on a shared attribute or variable.
+- **Join by location** is when you have two shapefiles that you want to combine based on where the features are located on the map. For example if you have a map of US states and you want to add information about its cities, you can run a spatial join by location. To learn more about this type of join, check out [How Spatial Join Works in GIS by GIS Geography](https://gisgeography.com/spatial-join/).
+
+# Exporting Data from QGIS
 
 Now our neighborhood shapefile (with the demographic information in it) is ready to be exported from QGIS and uploaded into ArcGIS Online where we will be able to turn it into an interactive map.
+
+## Preparing for the Export
 
 Before we export the shapefile file, let's create a folder for it. Since shapefiles are actually a set of 4-6 files, it's helpful to create a folder for them so they don't get mixed up with your other files.
 
 1. Create a new folder somewhere on your computer where you are keeping the data for this workshop.
 2. Let's name the folder `NYCntaPerBlack.`
+
+## Exporting the Data
 
 Now we're ready to export the data.
 
@@ -198,12 +209,13 @@ Navigate to your `NYCntaPerBlack` folder and check to see if all of the shapefil
 
 The last thing we have to do is **compress** the folder. ArcGIS Online will only import compressed shapefiles. If you're working on a Mac, right-click on the `NYCntaPerBlack` folder and click **compress**. If you're on a PC, right-click on the `NYCntaPerBlack` folder and select Send to and then **Compressed (zipped) folder**.
 
-# Importing data to ArcGIS Online
+# Importing Data to ArcGIS Online
 
-## Login to ArcGIS Online
+<!-- todo: add transitional short paragraph here about ArcGIS, reminding the learner what the difference is (and that there is a difference) between QGIS and ArcGIS -->
+
+## Login to ArcGIS Online and Setup Interface
+
 First, you'll have to set yourself up with a free ArcGIS Online public account. To do so, open [ArcGIS Online](https://www.arcgis.com/home/index.html), and Sign in. If you don't already have an account, you can create one for free or use your Google, Facebook or Github account.
-
-## Create a new map and add your data from QGIS to ArcGIS
 
 Once you've logged in, let's open a new map project by selecting "Map" in the main menu.
 
@@ -211,11 +223,13 @@ Let's get acquainted with the interface.
 
 ![Screenshot detailing ArcGISOnline's interface](images/arcgisinterface.png)
 
+## Create a New Map and Add Your Data from QGIS to ArcGIS
+
 Now let's import and format our neighborhoods shapefile.
 
 1. Click on **Add**.
 2. Click **Add Layer from File**.
-3. Select **Choose File**. And navigate to where you have the zipped/compressed `NYCntaPerBlack` file saved on your computer.
+3. Select **Choose File**. And navigate to where you have the compressed `NYCntaPerBlack` file saved on your computer.
 4. Feel free to leave the option "Generalize features for web display" selected. I've tried making maps with both this option and "Keep original features" and I've never noticed any difference.
 5. Click **Import Layer**.
 
@@ -229,13 +243,15 @@ Let's change the attribute so that it shows the percent Black population of New 
 
 1. Under **Choose an attribute to show**, select `BINHP` which stands for Black Non-Hispanic Population.
 2. Click around with the Drawing Styles to see which you think works best. I would suggest using the first option, a choropleth map style that shows the value by the intensity of the color.<!-- todo: new term for the glossary: cloropleth -->
-3. Let's change the color to something different.
-    - In the **Counts and Amounts** (Color) box click **Options**.
-    - Click **Symbols**, and change the color. I'm selecting the black/white color ramp since I think it fits in with the story I'm trying to tell.
-    - Once you've chosen your color ramp, click **OK**.
-    - Optional: You can click on **Classify** if you want to change how the data is visualized and how many categories are created. "Natural breaks" is a good option because it increases variability between classes while decreasing it within classes.
-    - Click the **OK** button at the bottom of the Layers Panel.
-    - Finally, click **Done** to save your changes to the map. If you don't click Done, it will revert to what you had before.
+
+Let's change the color to something that makes sense.
+
+1. In the **Counts and Amounts** (Color) box click **Options**.
+2. Click **Symbols**, and change the color. I'm selecting the black/white color ramp since I think it fits in with the story I'm trying to tell.
+3. Once you've chosen your color ramp, click **OK**.
+4. Optional: You can click on **Classify** if you want to change how the data is visualized and how many categories are created. "Natural breaks" is a good option because it increases variability between classes while decreasing it within classes.
+5. Click the **OK** button at the bottom of the Layers Panel.
+6. Finally, click **Done** to save your changes to the map. If you don't click Done, it will revert to what you had before.
 
 You should now see your maps styled with your new color ramp. You'll also see the `NYCntaPerBlack` map layer in the Layers Panel.
 
@@ -247,7 +263,7 @@ If you click on your map, you'll see a pop-up window with all of the information
 
 ![Screenshot that shows what the automatic pop-up window looks like in ArcGIS Online](images/uglypopup1.png)
 
-As you'll see, the pop-up doesn't look very nice. The names won't make much sense to the map viewer, and the viewer probably wouldn't be interested in some of the information, like the `nta code`.
+As you'll see, the pop-up doesn't look very nice. The names won't make much sense to the map viewer, and the viewer probably wouldn't be interested in some of the information, like the `ntacode`.
 
 Let's configure our pop-up so that it looks better and provides better information.
 
@@ -294,7 +310,7 @@ To geocode the CSV file, the **Field Name** column (pulled from the CSV file) ne
 
 If they don't match, then click on the cell(s) to change it. Most likely, since the mapping software is pretty good at this stuff, they will all be automatically matched, so you won't have to change anything. Finally, click **Add Layer**.
 
-## Note on geocoding limits
+## Note on Geocoding Limits
 
 Note: ArcGIS will only geocode up to 100 entries. If you have more than 100, you can use the Census Geocoder which allows you to geocode up to 1000 entries.
 

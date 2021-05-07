@@ -8,7 +8,7 @@ In this map of the United States we see three basic shapes—the cities are repr
 
 ## Features and Attributes
 
-Another mapping concept that's important to know is that the visualizations that are displayed on the map are called the map's "features" and the data that's connected to those shapes are called the maps "attributes." Attribute data is stored in an attribute table, which is a lot like spreadsheet. One feature on the map can contain many attributes—the feature for the state of Florida has the attributes `STATEFP` (the state ID), `STUSPS` (the state abbreviation), `NAME` (the state name), etc. Any type of data that you have at the scale of the state can be put in this attribute table. The attribute table stores all of the data and then you decide what data you want to visualize.<!-- todo: add these to the glossary -->
+Another mapping concept that's important to know is that the visualizations that are displayed on the map are called the map's "features" and the data that's connected to those shapes are called the maps "attributes." Attribute data is stored in an attribute table, which is a lot like spreadsheet. One feature on the map can contain many attributes—the feature for the state of Florida has the attributes `STATEFP` (the state ID), `STUSPS` (the state abbreviation), `NAME` (the state name), etc. Any type of data that you have at the scale of the state can be put in this attribute table. The attribute table stores all of the data and then you decide what data you want to visualize.<!-- TODO: add these to the glossary -->
 
 ![Screenshot explaining the concepts features and attributes in mapping](images/featuresattributes.png)
 
@@ -37,7 +37,7 @@ Both ArcGIS and QGIS are software that you download onto your computer and can b
 
 ![Chart that compares ARCGIS and QGIS](images/toolscomparison.png)
 
-For this workshop we will be using QGIS to perform spatial operations on our data. This is because QGIS is free and open source! It's one limitation is that it doesn't offer a way to make interactive maps. ArcGIS does offer an online version that can be used to make interactive maps, but the limitation is that you need a paid subscription if you want to perform spatial operations. So for this workshop we're going to do a little hack in which we use two different mapping tools so we can have a completely free experience :) We will use QGIS to perform spatial operations. And then we will export the data and upload it into ArcGIS Online to make our interactive map.
+For this workshop we will be using QGIS to perform spatial operations on our data. This is because QGIS is free and open source! However, since QGIS doesn't offer a way to make interactive maps, we will need a separate tool for that. ArcGIS does offer an online version that can be used to make interactive maps, but the limitation is that you need a paid subscription if you want to perform spatial operations. So for this workshop we're going to do a little hack in which we use two different mapping tools so we can have a completely free experience :) We will use QGIS to perform spatial operations. And then we will export the data and upload it into ArcGIS Online to make our interactive map.
 
 Here is a quick comparison for some of the mapping software that you can use to make an interactive map.
 
@@ -46,6 +46,8 @@ Here is a quick comparison for some of the mapping software that you can use to 
 The only option that is truly free is Leaflet, but it requires familiarity with coding. You can read more about the benefits and limitations of these tools in the blog post ["Finding the Right Tools for Mapping"](https://digitalfellows.commons.gc.cuny.edu/2019/06/03/finding-the-right-tools-for-mapping/) on the Graduate Center's Digital Fellows blog.
 
 # Ethics of Mapping
+
+<!-- Todo: perhaps split up this section, using subheaders into 2-3 subsections. The way it reads now feels a bit overpowering -->
 
 ![Quote: "Maps are embedded within power relations and mediate those relations through spatial representations — Pavlovskaya, M.E. (2006)"](images/quote1.png)
 
@@ -60,9 +62,9 @@ So much of the mapping process is dependent on the positionality of the mapmaker
 Important ethical decisions that every mapmaker must consider are:
 
 - **What data should I use?** If you choose to use data that's already collected (e.g. Census data), are you using it because it's the easiest to access or because it's the most appropriate data to answer your research question? What are the limitations of using data that hasn't been collected or managed by you?
-- **How should I classify the data?** What categories will you create? For example, if you are working with racial demographics will you report on the categories such as Latinx, non-Latinx White, non-Latinx Black, Latinx White, Latinx Black, etc, or will you provide broader categories such as people of color and white. What are the implications of choosing more general categories?
-- **At what resolution or scale should the data be aggregated?** If you are studying a phenomena at the neighborhood level, how do you define the boundaries of a neighborhood? Is it based on the school district, the CDP (Census Designated Place), the voting district, or maybe a boundary that doesn't have a formal delination, such as a sense of community among people?
-- **What are the implications of aggregating the data at a certain scale?** For example, let's say you are studying the differences between urban and suburban areas. If you aggregate your data at the level of counties, what could be missing from that representation of the data? Is there something that is happening at the level of the neighborhood or town, that could be useful to answer your research question? This is not to say that the smallest scales are always the best to work with, but rather to suggest that when we aggregate data, we need to be aware of what distinctions we are hiding in the process.
+- **How should I classify the data?** What categories will you create? For example, if you are working with racial demographics, will you report on the categories such as Latinx, non-Latinx White, non-Latinx Black, Latinx White, Latinx Black, etc, or will you provide broader categories such as people of color and white? What are the implications of choosing more general categories?
+- **At what resolution or scale should the data be aggregated?** If you are studying a phenomena at the neighborhood level, how do you define the boundaries of a neighborhood? Is it based on the school district, the Census Designated Place (CDP), the voting district, or maybe a boundary that doesn't have a formal delination, such as a sense of community among people?
+- **What are the implications of aggregating the data at a certain scale?** For example, let's say you are studying the differences between urban and suburban areas. If you aggregate your data at the level of counties, what could be missing from that representation of the data? Is something happening at the level of the neighborhood or town, which could prove useful to answer your research question? This is not to say that the smallest scales are always the best to work with, but rather to suggest that when we aggregate data, we need to be aware of what distinctions we are hiding in the process.
 - **What colors and symbols should I use?** Should you represent a population in red or blue? Red normally signals something that is alarming, while blue is a more neutral color. These subjective cartographic design decisions greatly impact viewer's understanding of the map.
 
 For more guiding questions on ethical decision making, please see ["Ethical Decision-Making"](https://serc.carleton.edu/geoethics/Decision-Making), a robust resource put together by the "Community of Earth Educators."
@@ -71,6 +73,8 @@ For more guiding questions on ethical decision making, please see ["Ethical Deci
 
 With all of the subjective decisions that go into mapmaking, those working in the tradition of feminist GIS and critical cartography have stressed the importance of contextualizing one's map. Maps do not speak for themselves. We need to add context that allows the viewer to understand all of the decisions that were made while making the map. This form of transparency will help tell the story that you are trying to communicate.
 
+## Further Resources
+
 For more about the history of mapping, and to learn about current countermapping projects, see these resources:
 
 - [Manual of Collective Mapping](https://www.academia.edu/28625755/Manual_of_Collective_Mapping_Critical_cartographic_resources_for_territorial_processes_of_collaborative_creation_2016_). Critical cartographic resources for territorial processes of collaborative creation.
@@ -78,7 +82,7 @@ For more about the history of mapping, and to learn about current countermapping
 
 # Making an Interactive Map: Introduction
 
-<!-- An introductory short paragraph would be nice here, which would also provide context for why we should have a research question and what it means for the "mapping" process (which also lends itself to a good tranition from the previous lesson into this one) -->
+<!-- An introductory short paragraph would be nice here, which would also provide context for why we should have a research question and what it means for the "mapping" process (which also lends itself to a good transition from the previous lesson into this one) -->
 
 ## Research Question
 
@@ -89,8 +93,10 @@ Do Black Lives Matter protests tend to take place more in majority Black neighbo
 What kind of data do we need to make this map?
 
 - **Location of protests.** Since this data didn't exist, I had to create it. I tried to find all of the protests that took place from May 28, 2020 to June 3, 2020. Since this was based on my own ability to capture the data from news articles, I assume that there are protests that happened during that week that are not in my dataset. When I publish my map, it will be important to state this assumption and include the methodology for how this data was collected.
-- **Shapes to represent the neighborhoods.** For NYC neighborhoods we can download a shapefile (which is a form of spatial data) from NYC Open Data. The file can be downloaded here. Click on "Export" and select "Shapefile".  A compressed folder will download. Move the folder out of your downloads and into a folder on your computer were you will be keeping all of the data for this workshop. When you open the folder you will notice there are four different files in there that all have the same name, yet are a different file type. In order for a shapefile to work, all of this data needs to stay together. Please compress the folder, so that the entire folder can be uploaded into our mapping software when we are ready to use it.<!-- TODO: First time shapefile is mentioned, should be added to glossary -->
+- **Shapes to represent the neighborhoods.** For NYC neighborhoods we can download a shapefile (which is a form of spatial data) from NYC Open Data. The file can be downloaded here.<!-- TODO: add a link here? --> Click on "Export" and select "Shapefile". A compressed folder will download. Move the folder out of your downloads and into a folder on your computer were you will be keeping all of the data for this workshop. When you open the folder you will notice there are four different files in there that all have the same name, yet are a different file type. In order for a shapefile to work, all of this data needs to stay together. Please compress the folder, so that the entire folder can be uploaded into our mapping software when we are ready to use it.<!-- TODO: First time shapefile is mentioned, should be added to glossary -->
 - **Census data on race by neighborhood.** Census generated demographic data can be downloaded as a CSV file from the Census website. I've already downloaded the spreadsheet and cleaned it up for us so that it only has the variables that we are interested in—`GeoName` (neighborhood name), `GeoID` (a unique identifier for each neighborhood), and `BINHP` (Percent Black).<!-- TODO: what does it mean that you have downloaded the spreadsheet here? Is it one of the datasets in the frontmatter? If so, perhaps we should link to it here. -->
+
+## Preview the Result
 
 To get a better idea of what we will be building together, you can take a look at a final version of the [Location of BLM Protests Map](http://arcg.is/1KyC9O).
 
@@ -98,11 +104,11 @@ To get a better idea of what we will be building together, you can take a look a
 
 ![Image detailing the process of combining data in a "spatial join"](images/data.png)
 
-When we think about how the data will be visualized in the map, we will be turning the location of the protests into a layer of points. And we will be stacking the point layer on top of a polygon layer, which are the neighborhoods. Since our neighborhood data—the features stored in the shapefile and the CSV with the data on race—are in two separate files, we'll need to perform a "spatial join" to combine them into one file.<!-- TODO: explain what is a polygon layer and add "polygon layer" to glossary -->
+When we think about how the data will be visualized in the map, we will be turning the location of the protests into a layer of points. And we will be stacking the point layer on top of a polygon layer, which are the neighborhoods. Since our neighborhood data—the features stored in the shapefile and the CSV with the data on race—are in two separate files, we'll need to perform a "spatial join" to combine them into one file.<!-- TODO: explain what is a polygon layer + add "polygon layer" to glossary -->
 
 ## What's a "Spatial Join"?
 
-Well, I'm glad you asked because a spatial join is one of the most common GIS operations! Since most of the data that we work with do not have coordinates attached to it (e.g. Census data), a spatial join is a way to connect data without mappable coordinates to features with mappable coordinates.<!-- TODO: do we need to clarify what mappable coordinates are, i.e. I presume lat/long? -->
+Well, I'm glad you asked because a spatial join is one of the most common GIS operations! Since most of the data that we work with do not have coordinates attached to it (e.g. Census data), a spatial join is a way to connect data without mappable coordinates to features with mappable coordinates.<!-- TODO: do we need to clarify what mappable coordinates are, i.e. I presume lat/long? Perhaps another term to add to glossary? -->
 
 In order to do this both files need to be the same resolution (e.g. NYC neighborhood) and they need to have a column of the same unique identifiers—this will serve as a key to match the two data files. When you work with data from the government, such at Census data, each geographical unit (e.g. each different neighborhood) will be given a unique identifier, so if both your data and your shapefile are from the government then the unique identifiers will match.<!-- TODO: add an explanation here of what "resolution" means + add "resolution" to glossary? -->
 
@@ -122,17 +128,19 @@ First, go ahead and open QGIS. When you open the application, you'll see an inte
 
 Let's add our data that needs to be joined. Follow the steps below to help you through the process.
 
-1. To add our CSV of demographic data, `racebyneighborhood.csv`, open the **Data Source Manager**—this button is located in the top left corner of the interface and looks like three pieces of colored paper stacked on top of each other.<!-- todo: add link to csv from glossary -->
+1. To add our CSV of demographic data, `racebyneighborhood.csv`, open the **Data Source Manager**—this button is located in the top left corner of the interface and looks like three pieces of colored paper stacked on top of each other.<!-- TODO: add link to csv from glossary -->
 2. When the Data Source Manager is open, select the **Delimited Text** option.
 3. On the right side of the **File name** section, click on the three dots to locate the file. Then click **Add**.
 
 ![Screenshot of QGIS's data source manager](images/datasourcemanager.png)
 
-You should now see the file appear in your Layers panel. You'll also see that nothing happens in your map display panel; this is because a CSV file is not mappable. That's why we need to combine it with our shapefile of vector data.
+You should now see the file appear in your Layers panel. You'll also see that nothing happens in your map display panel; this is because a CSV file is not mappable. That's why we need to combine it with our shapefile of vector data.<!-- A little unclear with what it means here that a "CSV file is not mappable" - if it has lat-long coordinates in two separate (or even a single) column, you'd be able to map it, no? -->
 
 ## Adding Vector Data from Our Shapefile to QGIS
 
-Now let's add our shapefile of NYC:
+Now let's add our shapefile of New York City:
+
+<!-- TODO: Add a screenshot here perhaps? -->
 
 1. Go back to the **Data Source Manager** and this time select **Vector**.
 2. Under **Source type**, the "file" option should be selected.
@@ -142,17 +150,17 @@ Now you should see that the file shows up in your Layers Panel, and it also disp
 
 ## Inspecting the Attribute Table
 
-Let's look at the data in the attribute table to see what we're working with. Each file has its own attribute table, so let's look at them one at a time.  To do so, right-click on the `racebyneighborhood.csv` file and select "Open attribute table." _If you see the three variables—`GeoName`, `GeoID`, and `BINHP`—then we're good to go!_
+Let's look at the data in the attribute table to see what we're working with. Each file has its own attribute table, so let's look at them one at a time. To do so, right-click on the `racebyneighborhood.csv` file and select "Open attribute table." _If you see the three variables—`GeoName`, `GeoID`, and `BINHP`—then we're good to go!_
 
 Let's open the attribute table for the "Neighborhood Tabulation Area" shapefile. Right-click on that layer and select "Open attribute table."
 
-<!-- todo: add a screenshot here perhaps of what the attribute table looks like? -->
+<!-- TODO: Add a screenshot here perhaps of what the attribute table looks like? -->
 
 In the table, you will see the variables: `boro_code` (borough code), `boro_name` (borough name), `county_fip` (the unique identifier for each county), `ntacode` (the unique identifier for each neighborhood), `ntaname` (neighborhood name), `shape_area` (surface area of each neighborhood in decimal degrees) and `shape_leng` (the length of the perimeter of each neighborhood in decimal degrees).
 
 You will notice that both files have a variable in common—the `ntacode` in the shapefile is the same as the `GeoID` in the CSV file. These two variables will serve as our keys that will be used to match and join the files together.
 
-A spatial join won't work unless the fields are the same type—integer, double, string, etc. To see the field type, double-click on each layer and navigate to the "Fields" tab. The `ntacode` and the `GeoID` are both string variables, so we are all set for our join.<!-- todo: add link to data type from glossary -->
+A spatial join won't work unless the fields are the same type—integer, double, string, etc. To see the field type, double-click on each layer and navigate to the "Fields" tab. The `ntacode` and the `GeoID` are both string variables, so we are all set for our join.<!-- TODO: add link to data type from glossary -->
 
 ## Performing a Spatial Join
 
@@ -185,11 +193,11 @@ Mapping softwares typically offer two different types of spatial joins—join by
 
 # Exporting Data from QGIS
 
-Now our neighborhood shapefile (with the demographic information in it) is ready to be exported from QGIS and uploaded into ArcGIS Online where we will be able to turn it into an interactive map.
+Now our neighborhood shapefile (containing the demographic information) is ready to be exported from QGIS and uploaded into ArcGIS Online where we will be able to turn it into an interactive map.
 
 ## Preparing for the Export
 
-Before we export the shapefile file, let's create a folder for it. Since shapefiles are actually a set of 4-6 files, it's helpful to create a folder for them so they don't get mixed up with your other files.
+Since shapefiles are actually a set of 4-6 files, it's helpful to create a folder for them so they don't get mixed up with your other files. So, before we export the shapefile file, let's create a folder for it. 
 
 1. Create a new folder somewhere on your computer where you are keeping the data for this workshop.
 2. Let's name the folder `NYCntaPerBlack.`
@@ -205,17 +213,17 @@ Now we're ready to export the data.
 
 ![Screenshot detailing the steps above to export the shapefiles for the project](images/exportnew.png)
 
-Navigate to your `NYCntaPerBlack` folder and check to see if all of the shapefiles are in there. If they are, then your export was successful.
+Navigate to your `NYCntaPerBlack` folder and check to see if all of the shapefiles are in there. There should be around 4–6 files in the folder. If there are, then your export was successful.
 
 The last thing we have to do is **compress** the folder. ArcGIS Online will only import compressed shapefiles. If you're working on a Mac, right-click on the `NYCntaPerBlack` folder and click **compress**. If you're on a PC, right-click on the `NYCntaPerBlack` folder and select Send to and then **Compressed (zipped) folder**.
 
 # Importing Data to ArcGIS Online
 
-<!-- todo: add transitional short paragraph here about ArcGIS, reminding the learner what the difference is (and that there is a difference) between QGIS and ArcGIS -->
+<!-- TODO: add transitional short paragraph here about ArcGIS, reminding the learner what the difference is (and that there is a difference) between QGIS and ArcGIS -->
 
 ## Login to ArcGIS Online and Setup Interface
 
-First, you'll have to set yourself up with a free ArcGIS Online public account. To do so, open [ArcGIS Online](https://www.arcgis.com/home/index.html), and Sign in. If you don't already have an account, you can create one for free or use your Google, Facebook or Github account.
+First, you'll have to set yourself up with a free ArcGIS Online public account. To do so, open [ArcGIS Online](https://www.arcgis.com), and click "Sign in." If you don't already have an account, you can create one for free using your email, or your Google, Facebook or Github account.
 
 Once you've logged in, let's open a new map project by selecting "Map" in the main menu.
 
@@ -225,29 +233,29 @@ Let's get acquainted with the interface.
 
 ## Create a New Map and Add Your Data from QGIS to ArcGIS
 
-Now let's import and format our neighborhoods shapefile.
+Now, let's import and format our neighborhoods shapefile.
 
 1. Click on **Add**.
 2. Click **Add Layer from File**.
-3. Select **Choose File**. And navigate to where you have the compressed `NYCntaPerBlack` file saved on your computer.
-4. Feel free to leave the option "Generalize features for web display" selected. I've tried making maps with both this option and "Keep original features" and I've never noticed any difference.
+3. Select **Choose File**. Then navigate to where you have the compressed `NYCntaPerBlack` file saved on your computer.
+4. Feel free to leave the option "Generalize features for web display" selected. I've tried making maps with both this option and "Keep original features" and I've never noticed any difference.<!-- Could there be a difference for mobile features, etc.? -->
 5. Click **Import Layer**.
 
-You should now see something that looks like a map of New York City, colored in by the Borough or another attribute. ArcGIS automatically selects an attribute to use to show on the map.
+You should now see something that looks like a map of New York City, where some automatic attribute (for example, borough) has been chosen by ArcGIS for coloration. In the example below, ArcGIS has automatically selected borough as an attribute to color on the map.
 
 ![Screenshot detailing what the map's styling looks like after the steps above](images/shapefileimport.png)
 
 # Changing the Map Style
 
-Let's change the attribute so that it shows the percent Black population of New York City's neighborhoods.
+Let's change the attribute so that colors instead represent the percentage of Black population in New York City's neighborhoods.
 
 1. Under **Choose an attribute to show**, select `BINHP` which stands for Black Non-Hispanic Population.
-2. Click around with the Drawing Styles to see which you think works best. I would suggest using the first option, a choropleth map style that shows the value by the intensity of the color.<!-- todo: new term for the glossary: cloropleth -->
+2. Click around with the Drawing Styles to see which you think works best. I would suggest using the first option, a choropleth map style that shows the value by the intensity of the color.<!-- TODO: new term for the glossary: cloropleth -->
 
 Let's change the color to something that makes sense.
 
 1. In the **Counts and Amounts** (Color) box click **Options**.
-2. Click **Symbols**, and change the color. I'm selecting the black/white color ramp since I think it fits in with the story I'm trying to tell.
+2. Click **Symbols**, and change the color. I'm selecting the black/white color ramp since I think it fits in with the story I'm trying to tell.<!-- TODO: Should we add "color ramp" as a glossary term? -->
 3. Once you've chosen your color ramp, click **OK**.
 4. Optional: You can click on **Classify** if you want to change how the data is visualized and how many categories are created. "Natural breaks" is a good option because it increases variability between classes while decreasing it within classes.
 5. Click the **OK** button at the bottom of the Layers Panel.
@@ -278,7 +286,7 @@ Let's explore the options that we have for the pop-up.
 1. The first thing you'll see is a checkbox for turning on and off the pop-up. We're going to leave ours on.
 2. In the **Pop-up Title**, you can enter a name that will be displayed at the top of every pop-up box. You can type in something. Or you can have one of the attributes displayed. Let's have the neighborhood name displayed in the pop-up title. To do this, **click the plus sign** to the right of the text box and select `ntaname`. Next to `ntaname`, write "(Black%). Now the title will show the name of the neighborhood and the text "(Black%)".
 3. In the **Display**, select the drop-down to see the list of options. The options for what you can display in the pop-up are "A list of attributes", "A description from one field", "A custom attribute display", and "no attribute information". We are going to select **A description from one field** since we are only interested in showing the value for Percent Black. Then in the next drop-down **select `BINHP`**.
-4. Then click OK to save our changes.
+4. Then click **OK** to save our changes.
 
 Now when you click on the map you should see a popup with just the name of the neighborhood plus the text "(Black%)" and then in the box you will see the value for Percent Black.
 
@@ -286,27 +294,27 @@ Now when you click on the map you should see a popup with just the name of the n
 
 # Importing CSV file and Geocoding Addresses
 
-Now we're ready to import our next mapping layer. This one will be the CSV file that we have of several BLM protests that took place during one week in June. We want to layer this data as points on our choropleth map in order to see if the protests tended to take place in neighborhoods that were majority Black, or not.
+Now we're ready to import our next mapping layer. This one will be the CSV file that we have of several BLM protests that took place during one week in June. We want to layer this data as points on our choropleth map in order to see if the protests tended to take place in neighborhoods that were majority Black, or not.<!-- TODO: add link to "cloropleth" from glossary to this lesson -->
 
 Let's import the file.
 
 1. Select **Add**.
 2. Select **Add Layer from File**.
-3. Select **Choose File**, and navigate to where you have the file `1 Week of Protests.csv` saved on  your computer.
+3. Select **Choose File**, and navigate to where you have the file `1 Week of Protests.csv` saved on your computer.
 4. Select **Import Layer**.
 
 At this point a box should appear that says "Add CSV Layer" at the top and has information about location, coordinates and addresses.
 
 ![Screenshot that shows ArcGIS Online's "Add CSV Layer" dialog](images/addcsv.png)
 
-This is the ArcGIS's way of asking you if you want to convert the addresses that are stored in the CSV file into points on the map. This process is called "geocoding." Geocoding will only work if you have addresses or coordinates stored in your CSV file, and luckily we do! If you open the CSV file in a spreadsheet manager, you'll see that we have the fields `address`, `city`, `state` and `zip`. This is all the geocoding process will need to be able to locate the address for each protest and create a map layer of points.<!-- new term for glossary: geocoding -->
+This is the ArcGIS's way of asking you if you want to convert the addresses that are stored in the CSV file into points on the map. This process is called "geocoding." Geocoding will only work if you have addresses or coordinates stored in your CSV file, and luckily we do! If you open the CSV file in a spreadsheet manager, you'll see that we have the fields `address`, `city`, `state` and `zip`. This is all the geocoding process will need to be able to locate the address for each protest and create a map layer of points.<!-- TODO: add new term to glossary: geocoding -->
 
 To geocode the CSV file, the **Field Name** column (pulled from the CSV file) needs to match with the **Location Fields** column (which is the geocoder column). Make sure that the following fields match:
 
-1. Field Name: Address  =  Location Fields: Address or Place
-2. Field Name: City  =  Location Fields: City
-3. Field Name: State =  Location Fields: State
-4. Field Name: Zip  =  Location Fields: Zip
+1. Field Name: Address = Location Fields: Address or Place
+2. Field Name: City = Location Fields: City
+3. Field Name: State = Location Fields: State
+4. Field Name: Zip = Location Fields: Zip
 
 If they don't match, then click on the cell(s) to change it. Most likely, since the mapping software is pretty good at this stuff, they will all be automatically matched, so you won't have to change anything. Finally, click **Add Layer**.
 
@@ -322,7 +330,7 @@ Let's change the style of the points layer. I'm not really interested in display
 
 1. Under **Choose an attribute to show**, select "Show location only."
 2. Now let's change the color of the points. In the box that says Location (single symbol) choose **OPTIONS**.
-3. Select Symbols.
+3. Select **Symbols**.
 4. Feel free to play around with the options for the style of the point. You can change the shape, the fill color, the outline, and the size. You can even upload your own image. For mine, I chose an orange star that's size 12.
 5. Select **OK**.
 6. And select **OK** again.
@@ -351,8 +359,8 @@ Here, you can decide which attributes to display by clicking the checkboxes unde
 
 1. In the **Display** column select "Start Location" and "Details." Even though we also want to add "photo" we are not going to check that off here. Media needs to be configured through a different process, which we'll do next.
 2. You don't have to change anything in the **Edit** column.
-3. Under Field Alias click on the word "Details" and change it to "Protest info."
-4. Click OK.
+3. Under Field Alias click on the word **Details** and change it to "Protest info."
+4. Click **OK**.
 
 Now let's add our photo to the pop-up. Under **Pop-up Media** select **Add < Image**. You should see the following dialog:
 

@@ -4,7 +4,7 @@ Making a map is like learning a new language, it's a slow and frustrating proces
 
 ![An example of a Points Lines and Polygon Map](images/pointslinespolygonsmap.png)
 
-In this map of the United States we see three basic shapes—the cities are represented by points, the main rivers are represented by lines and the states are represented by polygons. While this is a very simple map, most maps that you've seen, even the most intricate ones only consist of these three basic shapes—points, lines and polygons. This type of mapping data is called "vector data."
+In this map of the United States we see three basic shapes—the cities are represented by points, the main rivers are represented by lines and the states are represented by polygons. While this is a very simple map, most maps that you've seen, even the most intricate ones only consist of these three basic shapes—points, lines and polygons. This type of mapping data is called "vector data."<!-- TODO: add "map shapes" to glossary... linked to shapefile and raster data perhaps -->
 
 ## Sidebar: Raster Data
 

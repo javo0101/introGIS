@@ -27,15 +27,15 @@ Important ethical decisions that every mapmaker must consider are:
 - What colors and symbols should I use?
     - Should you represent a population in red or blue? Red normally signals something that is alarming, while blue is a more neutral color. These subjective cartographic design decisions greatly impact viewer's understanding of the map.
 
-For more guiding questions on ethical decision making, please see [this robust resource](<https://serc.carleton.edu/geoethics/Decision-Making>) put together by "The Community of Earth Educators."
+For more guiding questions on ethical decision making, please see [this robust resource](https://serc.carleton.edu/geoethics/Decision-Making) put together by "The Community of Earth Educators."
 
 ![quote about mapping subjectivities](../images/quote2.png)
 
 With all of the subjective decisions that go into mapmaking, those working out the tradition of feminist GIS and critical cartography have stressed the importance of contextualizing one's map. Maps should not speak for themselves. We should add context that allows the viewer to understand all of the decisions that were made while making the map. This form of transparency will help tell the story that you are trying to communicate. 
 
 For more about the history of mapping, and to learn about current countermapping projects, see these resources:
-- [Manual of Collective Mapping.](<https://www.academia.edu/28625755/Manual_of_Collective_Mapping_Critical_cartographic_resources_for_territorial_processes_of_collaborative_creation_2016_>) Critical cartographic resources for territorial processes of collaborative creation.
-- [Counter Mapping:](<https://emergencemagazine.org/feature/counter-mapping/>) Zuni Maps
+- [Manual of Collective Mapping.](https://www.academia.edu/28625755/Manual_of_Collective_Mapping_Critical_cartographic_resources_for_territorial_processes_of_collaborative_creation_2016_) Critical cartographic resources for territorial processes of collaborative creation.
+- [Counter Mapping:](https://emergencemagazine.org/feature/counter-mapping/) Zuni Maps
 
 —-
 

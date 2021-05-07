@@ -61,7 +61,7 @@ To check to see if the join was successful, we'll need to look at the neighborho
 Since our shapefile layer has been updated with new data, lets rename it.
 1. Right click on the shapefile layer in the Layers Panel and select **Rename**. I'm going to rename mine "NYCntaPerBlack." This name will let me know that the data has New York City neighborhood tabulation areas and percent black. 
 
-**Note**: Mapping softwares typically offer two different types of spatial joins—join by attribute and join by location. **Join by attribute** is the type of join what we just did; it's based on matching two layers based on a shared attribute or variable. **Join by location** is when you have two shapefiles that you want to combine based on where the features are located on the map. For example if you have a map of US states and you want to add information about its cities, you can run a spatial join by location. To learn more about this type of join, check out [this article.](<https://gisgeography.com/spatial-join/>) 
+**Note**: Mapping softwares typically offer two different types of spatial joins--join by attribute and join by location. **Join by attribute** is the type of join what we just did; it’s based on matching two layers based on a shared attribute or variable. **Join by location** is when you have two shapefiles that you want to combine based on where the features are located on the map. For example if you have a map of US states and you want to add information about its cities, you can run a spatial join by location. To learn more about this type of join, check out [this article.](https://gisgeography.com/spatial-join/) 
 
 ## Exporting Data from QGIS
 

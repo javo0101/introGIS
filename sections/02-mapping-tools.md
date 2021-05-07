@@ -25,7 +25,7 @@ Here is a quick comparison for some of the mapping software that you can use to 
 
 ![interactive map tool chart comparison](../images/toolscomparison2.png)
 
-The only option that is truly free is Leaflet, but it requires familiarity with coding. You can read more about the benefits and limitations of these tools in [this article](<https://digitalfellows.commons.gc.cuny.edu/2019/06/03/finding-the-right-tools-for-mapping/>)
+The only option that is truly free is Leaflet, but it requires familiarity with coding. You can read more about the benefits and limitations of these tools in [this article](https://digitalfellows.commons.gc.cuny.edu/2019/06/03/finding-the-right-tools-for-mapping/)
 
 —-
 

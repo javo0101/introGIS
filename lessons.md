@@ -2,7 +2,7 @@
 
 Making a map is like learning a new language, it's a slow and frustrating process because there are a lot of concepts unique to mapping and almost none of it makes sense in the beginning. This first part of the workshop is a very quick overview of mapping concepts to help orient you to the process of mapmaking.
 
-![An example of a Points Lines and Polygon Map](images/pointslinespolygonsmap.png)
+![An example of a Points, Lines, and Polygon Map](images/pointslinespolygonsmap.png)
 
 In this map of the United States we see three basic shapes—the cities are represented by points, the main rivers are represented by lines and the states are represented by polygons. While this is a very simple map, most maps that you've seen, even the most intricate ones only consist of these three basic shapes—points, lines and polygons. This type of mapping data is called "vector data."<!-- TODO #12: add "map shapes" to glossary... linked to shapefile and raster data perhaps -->
 
@@ -19,8 +19,6 @@ There is another important type of data that we will not be using in this worksh
 ![An example of a Polygon Map](images/polygonsmap.png)
 
 ![An example of a Line Map](images/polygonslinesmap.png)
-
-![An example of a Points, Lines, and Polygon Map](images/pointslinespolygonsmap.png)
 
 Voilà!
 

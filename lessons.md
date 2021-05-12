@@ -20,6 +20,8 @@ There is another important type of data that we will not be using in this worksh
 
 ![An example of a Line Map](images/polygonslinesmap.png)
 
+![An example of a Points, Lines, and Polygon Map](images/pointslinespolygonsmap.png)
+
 Voilà!
 
 # Mapping Tools

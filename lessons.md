@@ -4,7 +4,7 @@ Making a map is like learning a new language, it's a slow and frustrating proces
 
 ![An example of a Points, Lines, and Polygon Map](images/pointslinespolygonsmap.png)
 
-In this map of the United States we see three basic shapes—the cities are represented by points, the main rivers are represented by lines and the states are represented by polygons. While this is a very simple map, most maps that you've seen, even the most intricate ones only consist of these three basic shapes—points, lines and polygons. This type of mapping data is called "vector data."<!-- TODO #12: add "map shapes" to glossary... linked to shapefile and raster data perhaps -->
+In this map of the United States we see three basic shapes—the cities are represented by points, the main rivers are represented by lines and the states are represented by polygons. While this is a very simple map, most maps that you've seen, even the most intricate ones only consist of these three basic shapes—points, lines and polygons. This type of mapping data is called "vector data." Vector data can be stored in several file formats with the most common being a "shapefile." <!-- TODO #12: add "map shapes" to glossary... linked to shapefile and raster data perhaps -->
 
 ## Features and Attributes
 
@@ -23,6 +23,23 @@ There is another important type of data that we will not be using in this worksh
 ![An example of a Points, Lines, and Polygon Map](images/pointslinespolygonsmap.png)
 
 Voilà!
+
+## Evaluation
+
+Vector data consists of?
+- points*
+- pixels
+- lines*
+- polygons*
+
+## Keywords
+Do you remember the glossary terms from this section?
+
+- Vector data
+- Raster data
+- Shapefile
+- Features
+- Attributes
 
 # Mapping Tools
 
@@ -45,6 +62,9 @@ Here is a quick comparison for some of the mapping software that you can use to 
 
 The only option that is truly free is Leaflet, but it requires familiarity with coding. You can read more about the benefits and limitations of these tools in the blog post ["Finding the Right Tools for Mapping"](https://digitalfellows.commons.gc.cuny.edu/2019/06/03/finding-the-right-tools-for-mapping/) on the Graduate Center's Digital Fellows blog.
 
+## Challenge
+A friend looks over your shoulder as you are going through the workshop. They ask, "Why are you using two different mapping softwares?" How would you respond?
+
 # Ethics of Mapping
 
 <!-- TODO #12: perhaps split up this section, using subheaders into 2-3 subsections. The way it reads now feels a bit overpowering -->
@@ -58,6 +78,8 @@ In introduction to mapping courses we are often told that every map starts with 
 Maps are powerful. The cartesian map which divides the world into coordinates has its origins as being a tool for nation-state building and colonialism. Due to this history, maps are often seen as authoritative and therefore representing objective Truth. Being a cartographer comes with a lot of responsibility. Still today, once you display something in the form of a map it's rarely questioned for its veracity. And yet, the real Truth is that all maps only represent partial truths.
 
 So much of the mapping process is dependent on the positionality of the mapmaker and all of the subjective decisions that they must make when deciding what will be mapped, how the data will be manipulated, and how it will be visualized.
+
+# Ethics of Mapping Continued
 
 Important ethical decisions that every mapmaker must consider are:
 
@@ -80,6 +102,10 @@ For more about the history of mapping, and to learn about current countermapping
 - [Manual of Collective Mapping](https://www.academia.edu/28625755/Manual_of_Collective_Mapping_Critical_cartographic_resources_for_territorial_processes_of_collaborative_creation_2016_). Critical cartographic resources for territorial processes of collaborative creation.
 - [Counter Mapping: Zuni Maps](https://emergencemagazine.org/feature/counter-mapping/).
 
+## Challenge
+
+Have a look at [this map](https://www.nytimes.com/interactive/2020/us/covid-19-vaccine-doses.html?action=click&module=Spotlight&pgtype=Homepage) of vaccination by county and state. Imagine the map in red instead of green. Do you think that might shift some people's feelings towards the vaccine, even if on a subconscious level? Also, have a look at the two different maps--one aggregated by county and the other by state. How does the level of aggregation change what the map tells us?
+
 # Making an Interactive Map: Introduction
 
 <!-- An introductory short paragraph would be nice here, which would also provide context for why we should have a research question and what it means for the "mapping" process (which also lends itself to a good transition from the previous lesson into this one) -->
@@ -92,9 +118,9 @@ Do Black Lives Matter protests tend to take place more in majority Black neighbo
 
 What kind of data do we need to make this map?
 
-- **Location of protests.** Since this data didn't exist, I had to create it. I tried to find all of the protests that took place from May 28, 2020 to June 3, 2020. Since this was based on my own ability to capture the data from news articles, I assume that there are protests that happened during that week that are not in my dataset. When I publish my map, it will be important to state this assumption and include the methodology for how this data was collected.
-- **Shapes to represent the neighborhoods.** For NYC neighborhoods we can download a shapefile (which is a form of spatial data) from NYC Open Data. The file can be downloaded here.<!-- TODO #12: add a link to shapefile from NYC Open Data? --> Click on "Export" and select "Shapefile". A compressed folder will download. Move the folder out of your downloads and into a folder on your computer were you will be keeping all of the data for this workshop. When you open the folder you will notice there are four different files in there that all have the same name, yet are a different file type. In order for a shapefile to work, all of this data needs to stay together. Please compress the folder, so that the entire folder can be uploaded into our mapping software when we are ready to use it.<!-- TODO #12: First time shapefile is mentioned, should be added to glossary -->
-- **Census data on race by neighborhood.** Census generated demographic data can be downloaded as a CSV file from the Census website. I've already downloaded the spreadsheet and cleaned it up for us so that it only has the variables that we are interested in—`GeoName` (neighborhood name), `GeoID` (a unique identifier for each neighborhood), and `BINHP` (Percent Black).<!-- TODO #12: what does it mean that you have downloaded the spreadsheet here? Is it one of the datasets in the frontmatter? If so, perhaps we should link to it here. -->
+- **Location of protests.** This data didn't exist, so I had to create it. I tried to find all of the protests that took place from May 28, 2020 to June 3, 2020. Since this was based on my own ability to capture the data from news articles, I assume that there are protests that happened during that week that are not in my dataset. When I publish my map, it will be important to state this assumption and include the methodology for how this data was collected.
+- **Shapes to represent the neighborhoods.** For NYC neighborhoods we can download a shapefile (which is a form of spatial data) from NYC Open Data. The file can be [downloaded here](https://data.cityofnewyork.us/City-Government/Neighborhood-Tabulation-Areas-NTA-/cpf4-rkhq).<!-- TODO #12: add a link to shapefile from NYC Open Data? --> Click on "Export" and select "Shapefile". A compressed folder will download. Move the folder out of your downloads and into a folder on your computer were you will be keeping all of the data for this workshop. When you open the folder you will notice there are four different files in there that all have the same name, yet are a different file type. In order for a shapefile to work, all of this data needs to stay together. Please compress the folder, so that the entire folder can be uploaded into our mapping software when we are ready to use it.<!-- TODO #12: First time shapefile is mentioned, should be added to glossary -->
+- **Census data on race by neighborhood.** Census generated demographic data can be downloaded as a CSV file from the Census website. I've already downloaded the spreadsheet and cleaned it up for us so that it only has the variables that we are interested in—`GeoName` (neighborhood name), `GeoID` (a unique identifier for each neighborhood), and `BINHP` (Percent Black). You can find this file [here](https://github.com/DHRI-Curriculum/mapping/blob/v2.0-olivia-edits/dataset/racebyneighborhood.csv)<!-- TODO #12: what does it mean that you have downloaded the spreadsheet here? Is it one of the datasets in the frontmatter? If so, perhaps we should link to it here. -->
 
 ## Preview the Result
 
@@ -104,19 +130,35 @@ To get a better idea of what we will be building together, you can take a look a
 
 ![Image detailing the process of combining data in a "spatial join"](images/data.png)
 
-When we think about how the data will be visualized in the map, we will be turning the location of the protests into a layer of points. And we will be stacking the point layer on top of a polygon layer, which are the neighborhoods. Since our neighborhood data—the features stored in the shapefile and the CSV with the data on race—are in two separate files, we'll need to perform a "spatial join" to combine them into one file.<!-- TODO #12: explain what is a polygon layer + add "polygon layer" to glossary -->
+Since our neighborhood data are in two separate files, we'll need to perform a "spatial join" to combine them into one file. During the spatial join we will add the data on percent black by neighborhood that's in our CSV to the neighborhood shapefile, which is a polygon layer. Later on, we will turn the CSV of protests into a point layer through a process called *geocoding*. Remember that we are working with vector data, which is visualized as points, lines or polygons. We won't have any lines in our map, but we will have a polygon layer (neighborhoods) and a points layer (protests).<!-- TODO #12: explain what is a polygon layer + add "polygon layer" to glossary -->
 
 ## What's a "Spatial Join"?
 
-Well, I'm glad you asked because a spatial join is one of the most common GIS operations! Since most of the data that we work with do not have coordinates attached to it (e.g. Census data), a spatial join is a way to connect data without mappable coordinates to features with mappable coordinates.<!-- TODO #12: do we need to clarify what mappable coordinates are, i.e. I presume lat/long? Perhaps another term to add to glossary? -->
+Well, I'm glad you asked because a spatial join is one of the most common GIS operations! There are two types of spatial joins--*spatial join by attribute* and *spatial join by location*. Both of them are ways that the mapping software will let you add data from one map layer or file to another map layer. A *spatial join by attribute* is used when you want to join non-spatial data, such as a text file, to spatial data, such as a shapefile. A *spatial join by location* is used when you want to join two layers of spatial data (e.g. a points layer to a polygon layer). Let's say you are working with the map of the U.S. used in the introduction and you want to aggregate information at the city level (the point layer) to the level of the state (the polygon layer). For this you will use a *join by location* since you are comparing two layers with spatial data.
 
-In order to do this both files need to be the same resolution (e.g. NYC neighborhood) and they need to have a column of the same unique identifiers—this will serve as a key to match the two data files. When you work with data from the government, such at Census data, each geographical unit (e.g. each different neighborhood) will be given a unique identifier, so if both your data and your shapefile are from the government then the unique identifiers will match.<!-- TODO #12: add an explanation here of what "resolution" means + add "resolution" to glossary? -->
+Since we are joining a CSV file (non-spatial data) with a shapefile (spatial data) we will need to use a *join by attribute*.<!-- TODO #12: do we need to clarify what mappable coordinates are, i.e. I presume lat/long? Perhaps another term to add to glossary? -->
 
-Since we now have the concepts for what a spatial join means, we can move on to performing the spatial join on our data.
+In order to do this both files need to be the same resolution (e.g. NYC neighborhood). A resolution is the scale at which the data is aggregated and displayed. Additionally, both files need to have a column with the same unique identifiers—this will serve as a key to match the two data files. When you work with data from the government, such at Census data, each geographical unit (e.g. each different neighborhood) will be given a unique identifier, so if both your data and your shapefile are from the government then the unique identifiers will match.<!-- TODO #12: add an explanation here of what "resolution" means + add "resolution" to glossary? -->
+
+Now that we have the concepts for what a spatial join means, we can move on to performing the spatial join on our data.
+
+## Evaluation
+
+A spatial join by attribute is used when you want to join which combination of layers:
+- spatial data to non-spatial data*
+- spatial data to spatial data
+
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- Spatial Join 
+- Polygon layer
+- Resolution
 
 # Performing a Spatial Join
 
-We will use QGIS which is a free and open source mapping software that will allow us to do pretty much any spatial operation that you could ever want! If you haven't yet installed QGIS you can do so by following these installation instructions **add link**.<!-- TODO #12: build a file for installation instructions for QGIS + add link here... -->
+We will use QGIS which is a free and open source mapping software that will allow us to do pretty much any spatial operation that you could ever want! If you haven't yet installed QGIS you can do so by following these [installation instructions](https://github.com/DHRI-Curriculum/install/blob/main/sections/qgis.md) <!-- TODO #12: build a file for installation instructions for QGIS + add link here... -->
 
 ## Open QGIS
 
@@ -128,13 +170,13 @@ First, go ahead and open QGIS. When you open the application, you'll see an inte
 
 Let's add our data that needs to be joined. Follow the steps below to help you through the process.
 
-1. To add our CSV of demographic data, `racebyneighborhood.csv`, open the **Data Source Manager**—this button is located in the top left corner of the interface and looks like three pieces of colored paper stacked on top of each other.<!-- TODO #12: add link to "CSV" from glossary -->
+1. To add our [CSV](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/csv.md) of demographic data, `racebyneighborhood.csv`, open the **Data Source Manager**—this button is located in the top left corner of the interface and looks like three pieces of colored paper stacked on top of each other.<!-- TODO #12: add link to "CSV" from glossary -->
 2. When the Data Source Manager is open, select the **Delimited Text** option.
 3. On the right side of the **File name** section, click on the three dots to locate the file. Then click **Add**.
 
 ![Screenshot of QGIS's data source manager](images/datasourcemanager.png)
 
-You should now see the file appear in your Layers panel. You'll also see that nothing happens in your map display panel; this is because a CSV file is not mappable. That's why we need to combine it with our shapefile of vector data.<!-- A little unclear with what it means here that a "CSV file is not mappable" - if it has lat-long coordinates in two separate (or even a single) column, you'd be able to map it, no? -->
+You should now see the file appear in your Layers panel. You'll also see that nothing happens in your map display panel; this is because a CSV file is a text file. Remember that only vector data and raster data has features that can be mapped. A CSV file by itself is not mappable. That's why we need to combine it with the neighborhood shapefile. Note that if you happen to have precise location data in your CSV, such as addresses or latitude and longitude coordinates, the mapping software will be able to read it and convert it into vector data through a process called *geocoding*. When you don't have precise location data, you will need to use a *join by attribute* to add the text data to a shapefile. <!-- A little unclear with what it means here that a "CSV file is not mappable" - if it has lat-long coordinates in two separate (or even a single) column, you'd be able to map it, no? -->
 
 ## Adding Vector Data from Our Shapefile to QGIS
 
@@ -160,7 +202,7 @@ In the table, you will see the variables: `boro_code` (borough code), `boro_name
 
 You will notice that both files have a variable in common—the `ntacode` in the shapefile is the same as the `GeoID` in the CSV file. These two variables will serve as our keys that will be used to match and join the files together.
 
-A spatial join won't work unless the fields are the same type—integer, double, string, etc. To see the field type, double-click on each layer and navigate to the "Fields" tab. The `ntacode` and the `GeoID` are both string variables, so we are all set for our join.<!-- TODO #12: add link to data type from glossary -->
+A spatial join won't work unless the fields are the same data type —integer, double, string, etc. To see the field type, double-click on each layer and navigate to the "Fields" tab. The `ntacode` and the `GeoID` are both string variables, so we are all set for our join.<!-- TODO #12: add link to data type from glossary -->
 
 ## Performing a Spatial Join
 
@@ -184,12 +226,30 @@ Right-click on the shapefile layer and select **Open attribute table**. If you s
 
 Since our shapefile layer has been updated with new data, lets rename it. To do so, right-click on the shapefile layer in the Layers Panel and select **Rename**. I'm going to rename mine `NYCntaPerBlack`. This name will let me know that the data has New York City neighborhood tabulation areas and percent black.
 
-## Note: Two Different Types of Spatial Joins
+## Recap: Two Different Types of Spatial Joins
 
 Mapping softwares typically offer two different types of spatial joins—join by attribute and join by location.
 
 - **Join by attribute** is the type of join what we just did; it’s based on matching two layers based on a shared attribute or variable.
 - **Join by location** is when you have two shapefiles that you want to combine based on where the features are located on the map. For example if you have a map of US states and you want to add information about its cities, you can run a spatial join by location. To learn more about this type of join, check out [How Spatial Join Works in GIS by GIS Geography](https://gisgeography.com/spatial-join/).
+
+## Evaluation
+
+The *Data Source Manager* is used to:
+- import files into QGIS*
+- organize data files
+- stack map layers
+- export map layers
+
+What's needed to perform a *spatial join by attribute*
+- There must be a column in both datasets that matches and will serve as a key.*
+- The columns that serve as a key must be the same data type.*
+- The text file must has precise location data, such as an address or latitude and longitude.
+
+## Keywords
+- Spatial join by attribute
+- Spatial join by location
+
 
 # Exporting Data from QGIS
 

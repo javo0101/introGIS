@@ -17,7 +17,7 @@
 
 - In the workshop we learned that every map should begin with a simple and answerable research question. What else makes for a good mapping research question? Remember that maps can be exploratory so we don't need to fully answer the question. 
 - What makes a map ethical or unethical?
-- Think about the audience or audiences for your map. Do you think different audiences should warrent constructing the map in different ways? 
+- Think about the audience or audiences for your map. Do you think different audiences should warrant constructing the map in different ways? 
 
 ## More Resources
 

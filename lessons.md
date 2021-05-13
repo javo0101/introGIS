@@ -4,11 +4,11 @@ Making a map is like learning a new language, it's a slow and frustrating proces
 
 ![An example of a Points, Lines, and Polygon Map](images/pointslinespolygonsmap.png)
 
-In this map of the United States we see three basic shapes—the cities are represented by points, the main rivers are represented by lines and the states are represented by polygons. While this is a very simple map, most maps that you've seen, even the most intricate ones only consist of these three basic shapes—points, lines and polygons. This type of mapping data is called "vector data." Vector data can be stored in several file formats with the most common being a "shapefile." <!-- TODO #12: add "map shapes" to glossary... linked to shapefile and raster data perhaps -->
+In this map of the United States we see three basic shapes—the cities are represented by points, the main rivers are represented by lines and the states are represented by polygons. While this is a very simple map, most maps that you've seen, even the most intricate ones only consist of these three basic shapes—points, lines and polygons. This type of mapping data is called "vector data." Vector data can be stored in several file formats with the most common being a "[shapefile](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/shapefile.md)."
 
 ## Features and Attributes
 
-Another mapping concept that's important to know is that the visualizations that are displayed on the map are called the map's "features" and the data that's connected to those shapes are called the maps "attributes." Attribute data is stored in an attribute table, which is a lot like spreadsheet. One feature on the map can contain many attributes—the feature for the state of Florida has the attributes `STATEFP` (the state ID), `STUSPS` (the state abbreviation), `NAME` (the state name), etc. Any type of data that you have at the scale of the state can be put in this attribute table. The attribute table stores all of the data and then you decide what data you want to visualize.<!-- TODO #12: add "feature" and "attribute" to the glossary -->
+Another mapping concept that's important to know is that the visualizations that are displayed on the map are called the map's "[features](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/feature.md)" and the data that's connected to those shapes are called the maps "[attributes](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/attributetable.md)." Attribute data is stored in an attribute table, which is a lot like spreadsheet. One feature on the map can contain many attributes—the feature for the state of Florida has the attributes `STATEFP` (the state ID), `STUSPS` (the state abbreviation), `NAME` (the state name), etc. Any type of data that you have at the scale of the state can be put in this attribute table. The attribute table stores all of the data and then you decide what data you want to visualize.
 
 ![Screenshot explaining the concepts features and attributes in mapping](images/featuresattributes.png)
 
@@ -35,11 +35,11 @@ Vector data consists of?
 ## Keywords
 Do you remember the glossary terms from this section?
 
-- Vector data
-- Raster data
-- Shapefile
-- Features
-- Attributes
+- [Vector data](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/vector.md)
+- [Raster data](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/raster.md)
+- [Shapefile](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/shapefile.md)
+- [Features](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/feature.md)
+- [Attributes](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/attributetable.md)
 
 # Mapping Tools
 
@@ -67,7 +67,6 @@ A friend looks over your shoulder as you are going through the workshop. They as
 
 # Ethics of Mapping
 
-<!-- TODO #12: perhaps split up this section, using subheaders into 2-3 subsections. The way it reads now feels a bit overpowering -->
 
 ![Quote: "Maps are embedded within power relations and mediate those relations through spatial representations — Pavlovskaya, M.E. (2006)"](images/quote1.png)
 
@@ -137,11 +136,11 @@ Since our neighborhood data are in two separate files, we'll need to perform a "
 
 ## What's a "Spatial Join"?
 
-Well, I'm glad you asked because a spatial join is one of the most common GIS operations! There are two types of spatial joins--*spatial join by attribute* and *spatial join by location*. Both of them are ways that the mapping software will let you add data from one map layer or file to another map layer. A *spatial join by attribute* is used when you want to join non-spatial data, such as a text file, to spatial data, such as a shapefile. A *spatial join by location* is used when you want to join two layers of spatial data (e.g. a points layer to a polygon layer). Let's say you are working with the map of the U.S. used in the introduction and you want to aggregate information at the city level (the point layer) to the level of the state (the polygon layer). For this you will use a *join by location* since you are comparing two layers with spatial data.
+Well, I'm glad you asked because a [*spatial join*](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/spatialjoin) is one of the most common GIS operations! There are two types of spatial joins--*spatial join by attribute* and *spatial join by location*. Both of them are ways that the mapping software will let you add data from one map layer or file to another map layer. A *spatial join by attribute* is used when you want to join non-spatial data, such as a text file, to spatial data, such as a shapefile. A *spatial join by location* is used when you want to join two layers of spatial data (e.g. a points layer to a polygon layer). Let's say you are working with the map of the U.S. used in the introduction and you want to aggregate information at the city level (the point layer) to the level of the state (the polygon layer). For this you will use a *join by location* since you are comparing two layers with spatial data.
 
 Since we are joining a CSV file (non-spatial data) with a shapefile (spatial data) we will need to use a *join by attribute*.
 
-In order to do this both files need to be the same resolution (e.g. NYC neighborhood). A resolution is the scale at which the data is aggregated and displayed. Additionally, both files need to have a column with the same unique identifiers—this will serve as a key to match the two data files. When you work with data from the government, such at Census data, each geographical unit (e.g. each different neighborhood) will be given a unique identifier, so if both your data and your shapefile are from the government then the unique identifiers will match.
+In order to do this both files need to be the same resolution (e.g. NYC neighborhood). A [resolution](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/resolution.md) is the scale at which the data is aggregated and displayed. Additionally, both files need to have a column with the same unique identifiers—this will serve as a key to match the two data files. When you work with data from the government, such at Census data, each geographical unit (e.g. each different neighborhood) will be given a unique identifier, so if both your data and your shapefile are from the government then the unique identifiers will match.
 
 Now that we have the concepts for what a spatial join means, we can move on to performing the spatial join on our data.
 
@@ -155,9 +154,9 @@ A spatial join by attribute is used when you want to join which combination of l
 
 Do you remember the glossary terms from this section?
 
-- Spatial Join 
-- Polygon layer
-- Resolution
+- [Spatial Join](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/spatialjoin) 
+- [Polygon layer](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/polygon.md)
+- [Resolution](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/resolution.md)
 
 # Performing a Spatial Join
 
@@ -206,7 +205,7 @@ In the table, you will see the variables: `boro_code` (borough code), `boro_name
 
 You will notice that both files have a variable in common—the `ntacode` in the shapefile is the same as the `GeoID` in the CSV file. These two variables will serve as our keys that will be used to match and join the files together.
 
-A spatial join won't work unless the fields are the same data type —integer, double, string, etc. To see the field type, double-click on each layer and navigate to the "Fields" tab. The `ntacode` and the `GeoID` are both string variables, so we are all set for our join.<!-- TODO #12: add link to data type from glossary -->
+A spatial join won't work unless the fields are the same [data type](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/attributetype.md) —integer, double, string, etc. To see the field type, double-click on each layer and navigate to the "Fields" tab. The `ntacode` and the `GeoID` are both string variables, so we are all set for our join.
 
 ## Performing a Spatial Join
 
@@ -251,8 +250,8 @@ What's needed to perform a *spatial join by attribute*:
 - The text file must have precise location data, such as an address or latitude and longitude.
 
 ## Keywords
-- Spatial join by attribute
-- Spatial join by location
+- [Spatial join by attribute](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/joinbyattribute.md)
+- [Spatial join by location](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/joinbylocation.md)
 
 
 # Exporting Data from QGIS
@@ -329,8 +328,8 @@ Let's change the attribute so that the colors represent the percentage of Black 
 Let's change the color to something that makes sense.
 
 1. In the **Counts and Amounts** (Color) box click **Options**.
-2. Click **Symbols**, and change the color. I'm selecting the black/white color ramp since I think it fits in with the story I'm trying to tell.<!-- TODO #12: Should we add "color ramp" as a glossary term? -->
-3. Once you've chosen your color ramp, click **OK**.
+2. Click **Symbols**, and change the color. I'm selecting the black/white color ramp since I think it fits in with the story I'm trying to tell.
+3. Once you've chosen your [color ramp](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/colorramp.md), click **OK**.
 4. Optional: You can click on **Classify** if you want to change how the data is visualized and how many categories are created. "Natural breaks" is a good option because it increases variability between classes while decreasing it within classes.
 5. Click the **OK** button at the bottom of the Layers Panel.
 6. Finally, click **Done** to save your changes to the map. If you don't click Done, it will revert to what you had before.
@@ -342,6 +341,9 @@ You should now see your maps styled with your new color ramp. You'll also see th
 ## Challenge
 
 Play around with the symbology settings more. See how the map looks when you change the transparency, the number of classes and other features. To go back to the symbology settings, hover over the name of the map layer in the layers panel and select the *change style* button (the one with with three shapes--circle square and triangle). Then click *Options*.
+
+## Keywords
+- [color ramp](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/colorramp.md)
 
 
 # Configuring the Pop-up
@@ -386,7 +388,7 @@ At this point a box should appear that says "Add CSV Layer" at the top and has i
 
 ![Screenshot that shows ArcGIS Online's "Add CSV Layer" dialog](images/addcsv.png)
 
-This is the ArcGIS's way of asking you if you want to convert the addresses that are stored in the CSV file into points on the map. This process is called "geocoding." Geocoding is a spatial process that uses a *geographic address locator* to match addresses with location coordinates and create a point layer. It turns a text file (CSV) into a vector file (points layer). This process will only work if you have addresses or coordinates stored in your CSV file, and luckily we do! If you open the CSV file in a spreadsheet manager, you'll see that we have the fields `address`, `city`, `state` and `zip`. This is all the *geographic address locator* will need to be able to locate the address for each protest and create a map layer of points.<!-- TODO #12: add new term to glossary: geocoding -->
+This is the ArcGIS's way of asking you if you want to convert the addresses that are stored in the CSV file into points on the map. This process is called "[geocoding](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/geocoding.md)." Geocoding is a spatial process that uses a *geographic address locator* to match addresses with location coordinates and create a point layer. It turns a text file (CSV) into a vector file (points layer). This process will only work if you have addresses or coordinates stored in your CSV file, and luckily we do! If you open the CSV file in a spreadsheet manager, you'll see that we have the fields `address`, `city`, `state` and `zip`. This is all the *geographic address locator* will need to be able to locate the address for each protest and create a map layer of points.
 
 To geocode the CSV file, the **Field Name** column (pulled from the CSV file) needs to match with the **Location Fields** column (which is the geocoder column). Make sure that the following fields match:
 
@@ -404,7 +406,7 @@ Note: ArcGIS will only geocode up to 100 entries. If you have more than 100, you
 ## Keywords
 
 Do you remember the glossary terms from this section?
-- geocoding
+- [geocoding](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/geocoding.md)
 
 # Changing the Style of the Points Layer
 

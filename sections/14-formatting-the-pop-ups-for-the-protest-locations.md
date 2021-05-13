@@ -1,8 +1,8 @@
-← [Changing the Style of the Points Layer](12-changing-the-style-of-the-points-layer.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Formatting the Legend](14-formatting-the-legend.md) →
+← [Changing the Style of the Points Layer](13-changing-the-style-of-the-points-layer.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Formatting the Legend](15-formatting-the-legend.md) →
 
 ---
 
-# 13. Formatting the Pop-ups for the Protest Locations
+# 14. Formatting the Pop-ups for the Protest Locations
 
 Let's format the pop-ups for the protest locations so that the map viewer can learn more about the sites. The attributes that can be displayed are: "Date", "Start Location", "Address", "City", "State", "Zip", "Photo", "Details."
 
@@ -42,4 +42,4 @@ Now you should see a nicer looking pop-up when you click on the points on your m
 
 ---
 
-← [Changing the Style of the Points Layer](12-changing-the-style-of-the-points-layer.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Formatting the Legend](14-formatting-the-legend.md) →
+← [Changing the Style of the Points Layer](13-changing-the-style-of-the-points-layer.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Formatting the Legend](15-formatting-the-legend.md) →

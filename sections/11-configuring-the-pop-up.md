@@ -1,8 +1,8 @@
-← [Changing the Map Style](09-changing-the-map-style.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing CSV file and Geocoding Addresses](11-importing-csv-file-and-geocoding-addresses.md) →
+← [Changing the Map Style](10-changing-the-map-style.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing CSV file and Geocoding Addresses](12-importing-csv-file-and-geocoding-addresses.md) →
 
 ---
 
-# 10. Configuring the Pop-up
+# 11. Configuring the Pop-up
 
 If you click on your map, you'll see a pop-up window with all of the information contained in the attribute table.
 
@@ -10,7 +10,7 @@ If you click on your map, you'll see a pop-up window with all of the information
 
 As you'll see, the pop-up doesn't look very nice. The names won't make much sense to the map viewer, and the viewer probably wouldn't be interested in some of the information, like the `ntacode`.
 
-Let's configure our pop-up so that it looks better and provides better information.
+Let's configure our pop-up so that it looks better and provides more useful information.
 
 1. In the map's Layers Panel, **hover over** where it has the name of the shapefile `NYCntaPerBlack`, and you will see some options appear below it—"Show Legend", "Show Table", "Change Style", and "More Options."
 2. Select **More Options** by clicking the three dots below the name of the map layer.
@@ -31,4 +31,4 @@ Now when you click on the map you should see a popup with just the name of the n
 
 ---
 
-← [Changing the Map Style](09-changing-the-map-style.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing CSV file and Geocoding Addresses](11-importing-csv-file-and-geocoding-addresses.md) →
+← [Changing the Map Style](10-changing-the-map-style.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing CSV file and Geocoding Addresses](12-importing-csv-file-and-geocoding-addresses.md) →

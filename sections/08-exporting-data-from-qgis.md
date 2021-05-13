@@ -1,8 +1,8 @@
-← [Performing a Spatial Join](06-performing-a-spatial-join.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing Data to ArcGIS Online](08-importing-data-to-arcgis-online.md) →
+← [Performing a Spatial Join](07-performing-a-spatial-join.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing Data to ArcGIS Online](09-importing-data-to-arcgis-online.md) →
 
 ---
 
-# 7. Exporting Data from QGIS
+# 8. Exporting Data from QGIS
 
 Now our neighborhood shapefile (containing the demographic information) is ready to be exported from QGIS and uploaded into ArcGIS Online where we will be able to turn it into an interactive map.
 
@@ -28,6 +28,13 @@ Navigate to your `NYCntaPerBlack` folder and check to see if all of the shapefil
 
 The last thing we have to do is **compress** the folder. ArcGIS Online will only import compressed shapefiles. If you're working on a Mac, right-click on the `NYCntaPerBlack` folder and click **compress**. If you're on a PC, right-click on the `NYCntaPerBlack` folder and select Send to and then **Compressed (zipped) folder**.
 
+## Evaluation
+
+Why do we create a folder for the exported shapefile?
+- The export won't work without it.
+- Shapefiles are actually 4-6 files, so it's a way to keep them organized and prevent accidentally separating them.*
+- ArcGIS will only import compressed shapefiles, so we need to create a folder to compress or zip the file.*
+
 ---
 
-← [Performing a Spatial Join](06-performing-a-spatial-join.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing Data to ArcGIS Online](08-importing-data-to-arcgis-online.md) →
+← [Performing a Spatial Join](07-performing-a-spatial-join.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Importing Data to ArcGIS Online](09-importing-data-to-arcgis-online.md) →

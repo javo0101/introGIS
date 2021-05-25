@@ -30,7 +30,7 @@ Customize an interactive map.
 
 ## Datasets
 
-- [Download the dataset we will work with by clicking here](https://github.com/DHRI-Curriculum/mapping/tree/v2.0-olivia-edits/dataset).
+- [Download the dataset we will work with by clicking here](https://github.com/DHRI-Curriculum/mapping/tree/v2.0/dataset).
 - [Look at a version of the map we are going to make in this workshop](http://arcg.is/1KyC9O).
 
 ## Contexts

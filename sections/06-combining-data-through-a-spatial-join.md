@@ -29,7 +29,7 @@ A spatial join by attribute is used when you want to join which combination of l
 Do you remember the glossary terms from this section?
 
 - [Spatial Join](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/spatialjoin) 
-- [Polygon layer](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/polygon.md)
+- [Polygon](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/polygon.md)
 - [Resolution](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/resolution.md)
 
 ---

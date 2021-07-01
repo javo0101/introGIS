@@ -12,7 +12,7 @@ In this map of the United States we see three basic shapes—the cities are repr
 
 ## Features and Attributes
 
-Another mapping concept that's important to know is that the visualizations that are displayed on the map are called the map's "[features](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/feature.md)" and the data that's connected to those shapes are called the maps "[attributes](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/attributetable.md)." Attribute data is stored in an attribute table, which is a lot like spreadsheet. One feature on the map can contain many attributes—the feature for the state of Florida has the attributes `STATEFP` (the state ID), `STUSPS` (the state abbreviation), `NAME` (the state name), etc. Any type of data that you have at the scale of the state can be put in this attribute table. The attribute table stores all of the data and then you decide what data you want to visualize.
+Another mapping concept that's important to know is that the visualizations that are displayed on the map are called the map's "[features](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/feature.md)" and the data that's connected to those shapes are called the maps "[attributes](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/attribute-table.md)." Attribute data is stored in an attribute table, which is a lot like spreadsheet. One feature on the map can contain many attributes—the feature for the state of Florida has the attributes `STATEFP` (the state ID), `STUSPS` (the state abbreviation), `NAME` (the state name), etc. Any type of data that you have at the scale of the state can be put in this attribute table. The attribute table stores all of the data and then you decide what data you want to visualize.
 
 ![Screenshot explaining the concepts features and attributes in mapping](../images/featuresattributes.png)
 
@@ -39,11 +39,11 @@ Vector data consists of?
 ## Keywords
 Do you remember the glossary terms from this section?
 
-- [Vector data](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/vector.md)
-- [Raster data](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/raster.md)
+- [Vector](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/vector.md)
+- [Raster](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/raster.md)
 - [Shapefile](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/shapefile.md)
 - [Features](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/feature.md)
-- [Attributes](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/attributetable.md)
+- [Attributes](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/attribute-table.md)
 
 ---
 

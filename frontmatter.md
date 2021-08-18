@@ -61,7 +61,7 @@ Starting from figuring out how to represent a 3D reality on a 2D plane, there ar
 
 ## Acknowledgements
 
-- Current Author: [Olivia Ildefonso](https://oildefon.medium.com/)
-- Past contributing author: [Javier Otero Peña](https://enviropsych.org/students/javier-otero-pena/)
+- Author: [Olivia Ildefonso](https://oildefon.medium.com/)
+- Author: [Javier Otero Peña](https://enviropsych.org/students/javier-otero-pena/)
 - Editor: [Kalle Westerling](https://github.com/kallewesterling)
 - Editor: [Dr. Lisa Rhody](https://github.com/lmrhody)

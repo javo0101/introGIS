@@ -22,7 +22,7 @@ Now, let's import and format our neighborhoods shapefile.
 
 1. Click on **Add**.
 2. Click **Add Layer from File**.
-3. Select **Choose File**. Then navigate to where you have the compressed `NYCntaPerBlack` file saved on your computer.
+3. Select **Choose File**. Then navigate to where you have the GeoJSON `NYCntaPerBlack` file saved on your computer.
 4. Select "Generalize features for web display". I've tried making maps with both this option and "Keep original features" and I've never noticed any difference. 
   - ArcGIS describes the benefits of this feature the following way: Generalizing reduces the precision of the shapefile layer to approximately 1 meter in Web Mercator and will remove vertices within 10 meters in Web Mercator. This should maintain an informative and accurate display of your features while reducing the overall size of your data and allowing your layer to quickly display in the map.
 

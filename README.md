@@ -90,10 +90,10 @@ You may also want to check out a couple of projects that use the skills discusse
 
 ## Acknowledgements
 
-This workshop is the result of a collaborative effort of a team of people, mostly involved presently or in the past, with the Graduate Center's Digital Initiatives. If you want to see statistics for contributions to this workshop, you can do so [here](https://www.github.com/DHRI-Curriculum/mapping/graphs/contributors). This is a list of all the contributors:
+This workshop is the result of a collaborative effort of a team of people, mostly involved presently or in the past, with the Graduate Center's Digital Initiatives. If you want to see statistics for contributions to this workshop, you can do so [here](https://www.github.com/DHRI-Curriculum/mapping/graphs/contributors). This is a list of all the major contributors:
 
-- Current Author: [Olivia Ildefonso](https://oildefon.medium.com/)
-- Past contributing author: [Javier Otero Peña](https://enviropsych.org/students/javier-otero-pena/)
+- Author: [Olivia Ildefonso](https://oildefon.medium.com/)
+- Author: [Javier Otero Peña](https://enviropsych.org/students/javier-otero-pena/)
 - Editor: [Kalle Westerling](https://github.com/kallewesterling)
 - Editor: [Dr. Lisa Rhody](https://github.com/lmrhody)
 
